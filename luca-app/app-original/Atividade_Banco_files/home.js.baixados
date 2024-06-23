@@ -1,0 +1,338 @@
+APP.home = function ($el) {
+  var that = APP.baseClass($el);
+
+  that.init = function () {
+    that.setPageView("/", "Portal | Home PF");
+    that.loadComponents();
+    that.vivusAnimate();
+
+    var dataUrl = {
+      getReferrerUrl: function () {
+        var url_referrer = (window.location != window.parent.location) ? document.referrer : document.location.href;
+        return url_referrer;
+      },
+      getReferrerPage: function () {
+        var url_referrer = (window.location != window.parent.location) ? document.referrer : document.location.href;
+        var current_page = url_referrer.replace(/(http|https):\/\//, '');
+        current_page = current_page.split('/');
+        current_page = (current_page[1]) ? current_page[1] : url_referrer;
+        return current_page;
+      }
+    };
+
+    $(document).ready(function () {
+      // Disparo page view GTM
+      var url_page = window.location.href;
+      var eventoRotulo = window.location.pathname;
+
+      dataLayer.push({ 'event': 'pagetrack', 'PNPagina': dataUrl.getReferrerPage(), 'segmento': 'Pessoa-fisica', 'URL': url_page });
+
+      $('.btn-play').on("click", function (e) {
+        eventoRotulo = substituiTodasBarras(eventoRotulo);
+        if (eventoRotulo.length == 0) {
+          eventoRotulo = "Home";
+        }
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Video-play-home', 'eventoRotulo': 'ABRA UMA CONTA 100% DIGITAL_' + eventoRotulo, 'segmento': 'Institucional', 'url': url_page });
+      });
+      $('.eventoOpenFinance').on("click", function (e) {
+        eventoRotulo = substituiTodasBarras(eventoRotulo);
+        if (eventoRotulo.length == 0) {
+          eventoRotulo = "Home";
+        }
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Acessar-OpenFinance', 'eventoRotulo': eventoRotulo, 'segmento': 'Institucional', 'url': url_page });
+      });
+      $('.eventoAppleDownload').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Download App', 'eventoRotulo': 'Apple Download', 'segmento': 'Institucional', 'url': url_page });
+      });
+      $('.eventoAndroidDownload').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Download App', 'eventoRotulo': 'Android Download', 'segmento': 'Institucional', 'url': url_page });
+      });
+      $('.eventoFooterDocs').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Clique links footer', 'eventoRotulo': 'Documentos Importantes', 'segmento': 'Links Footer', 'url': url_page });
+      });
+      $('.eventoFooterBoleto').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Clique links footer', 'eventoRotulo': 'Emitir 2 via de boleto', 'segmento': 'Links Footer', 'url': url_page });
+      });
+      $('.eventoFooterCredito').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Clique links footer', 'eventoRotulo': 'Credito consignado', 'segmento': 'Links Footer', 'url': url_page });
+      });
+      $('.eventoFooterTarifas').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Clique links footer', 'eventoRotulo': 'Tarifas', 'segmento': 'Links Footer', 'url': url_page });
+      });
+      $('.eventoFooterPerguntas').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Clique links footer', 'eventoRotulo': 'Perguntas Frequentes', 'segmento': 'Links Footer', 'url': url_page });
+      });
+      $('.eventoFooterCorrespondente').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Clique links footer', 'eventoRotulo': 'Correspondente Bancario', 'segmento': 'Links Footer', 'url': url_page });
+      });
+      $('.eventoFooterFones').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Institucional', 'eventoAcao': 'Clique links footer', 'eventoRotulo': 'Telefones', 'segmento': 'Links Footer', 'url': url_page });
+      });
+      $('.redirect-landing').on("click", function (e) {
+        dataLayer.push({ 'event': 'gaevent', 'eventoCategoria': 'Pix', 'eventoAcao': 'Interacoes', 'eventoRotulo': 'Botao-Saiba-Mais', 'segmento': 'Pix  ', 'URL': url_page });
+      });
+      //FIM EVENTOS GTM
+
+      function substituiTodasBarras(str) {
+        var pos = str.indexOf("/");
+        while (pos > -1) {
+          str = str.replace("/", "");
+          pos = str.indexOf("/");
+        }
+        return (str);
+      }
+    });
+  }
+}
+
+/* /////////////////////////////////// */
+/* Scripts Form */
+$('input').focus(function () {
+  $(this).parents('.form-group').addClass('focused');
+});
+
+$('.form-input').ready(function () {
+  var inputValue = $('.form-input').val();
+  if ((inputValue == "") || (inputValue == null)) {
+    $('.form-group').removeClass('filled');
+    $('.form-group').removeClass('focused');
+  } else {
+    $('.form-group').addClass('focused');
+  }
+});
+
+function validaCPF(cpf) {
+  cpf = cpf.replace('.', '');
+  cpf = cpf.replace('.', '');
+  cpf = cpf.replace('-', '');
+
+  erro = new String;
+  var nonNumbers = /\D/;
+  if (cpf == "00000000000" || cpf == "11111111111" ||
+    cpf == "22222222222" || cpf == "33333333333" || cpf == "44444444444" ||
+    cpf == "55555555555" || cpf == "66666666666" || cpf == "77777777777" ||
+    cpf == "88888888888" || cpf == "99999999999") {
+    erro += "Numero de CPF invalido!"
+  }
+  var a = [];
+  var b = new Number;
+  var c = 11;
+  for (i = 0; i < 11; i++) {
+    a[i] = cpf.charAt(i);
+    if (i < 9) b += (a[i] * --c);
+  }
+  if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11 - x }
+  b = 0;
+  c = 11;
+  for (y = 0; y < 10; y++) b += (a[y] * c--);
+  if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11 - x; }
+  status = a[9] + "" + a[10]
+  if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10])) {
+    erro += "Digito verificador com problema!";
+  }
+  if (erro.length > 0) {
+    return false;
+  }
+  return true;
+}
+
+/* /////////////////////////////////////////////////////////// */
+/* VALIDAÇÃO FORM + CSS */
+var checkEmail = false
+var checkTelefone = false
+var checkCpf = false
+var checkNome = false
+
+function showError() {
+  if (checkNome === false && checkEmail === false && checkTelefone === false && checkCpf === false ) {
+  $('#baseMsg').css('display', 'none');
+  $('#warningError').css('display', 'block')
+  $('#btnEnviar').prop('disabled', true);
+  // $('#btnEnviar').css('opacity', '0.7');
+  }
+}
+function hideError() {
+  if (checkNome === true && checkEmail === true && checkTelefone === true && checkCpf === true ) {
+    $('#baseMsg').css('display', 'block');
+    $('#warningError').css('display', 'none');
+    $('#btnEnviar').prop('disabled', false);
+    $('#btnEnviar').css('opacity', 'unset');
+    $('#btnEnviar').css('cursor', 'pointer');
+  }
+}
+
+$('#nome').focusout(function () {
+  if ($(this).val().length <= 1) {
+    $(this).css('color', '#ff2845');
+    // $(this).css('background-color', 'transparent');
+    showError()
+    checkNome= false
+  }
+});
+
+$('#nome').keyup(function () {
+  $(this).css('color', '#fff');
+  // $(this).css('background-color', 'transparent');
+  hideError()
+  checkNome = true
+});
+
+$('#telefone').focusout(function () {
+  if ($(this).val().length <= 14) {
+    $(this).css('color', '#ff2845');
+    // $(this).css('background-color', 'transparent');
+    showError()
+    checkTelefone = false
+  }
+});
+
+$('#telefone').keyup(function () {
+  $(this).css('color', '#fff');
+  // $(this).css('background-color', 'transparent');
+  hideError()
+  checkTelefone = true
+});
+
+$('#email').focusout(function () {
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (!filter.test($(this).val())) {
+    $(this).css('color', '#ff2845');
+    // $(this).css('background-color', 'transparent');
+    showError()
+    checkEmail = false
+  }
+});
+
+$('#email').keyup(function () {
+  $(this).css('color', '#fff');
+  // $(this).css('background-color', 'transparent');
+  hideError()
+  checkEmail = true
+});
+
+$('#cpf').focusout(function () {
+  if ($(this).val().length <= 13) {
+    $(this).css('color', '#ff2845');
+    // $(this).css('background-color', 'transparent');
+    showError()
+    checkCpf = false
+  }
+  if (!validaCPF($(this).val())) {
+    $(this).css('color', '#ff2845');
+    // $(this).css('background-color', 'transparent');
+    showError()
+    checkCpf = false
+  }
+});
+
+$('#cpf').keyup(function () {
+  $(this).css('color', '#fff');
+  // $(this).css('background-color', 'transparent');
+  hideError()
+  checkCpf = true
+});
+
+var element = document.getElementById('telefone');
+var maskOptions = {
+  mask: '(00) 00000-0000'
+};
+var mask = IMask(element, maskOptions);
+
+var element = document.getElementById('cpf');
+var maskOptions = {
+  mask: '000.000.000-00'
+};
+var mask = IMask(element, maskOptions);
+
+function sendForm2() {
+  var data = {
+    "cliente": {
+      "nome": $('#nome').val().normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z\s])/g, ''),
+      "telefone": $('#telefone').val().replace(/[^\d]+/g, ''),
+      "email": $('#email').val(),
+      // "documento": modalPixForm.form.cpf.element.children[0].value.replace(/[^\d]+/g, ''),
+      // "indicadorCliente": modalPixForm.form.isClient.element.children[0].checked,
+      "documento": $('#cpf').val().replace(/[^\d]+/g, ''),
+      "cpf": $('#cpf').val().replace(/[^\d]+/g, ''),
+    },
+    "aplicacao": {
+      "origem": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "nomeCampanha": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "codigoParceria": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "descCampanha": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "utmMedium": getParameterByName('utm_medium'),
+      "utmSource": getParameterByName('utm_source'),
+      "utmCampaign": getParameterByName('utm_campaign'),
+      "utmContent":getParameterByName('utm_content'),
+      "utmTerm": getParameterByName('utm_term')
+    }
+  };
+
+  $.ajax({
+    type: "POST",
+    url: "/pix/leads",
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+      'key': 'v6qxwjMYgbZyWn12t6V2rAZmzy3eOaqeFG96'
+    },
+    success: function (msg) {
+      $('#pu-modalSucesso').show()
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'Cadastro-FormHomeSucesso' , 'eventoAcao' : 'Interacoes' , 'eventoRotulo' : 'Enviar' , 'Produto' : 'Home' , 'URL' : url_page});
+      // $('#pu-modalErro').show() //para teste localhost
+    },
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      $('#pu-modalErro').show()
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'Cadastro-FormHomeErro' , 'eventoAcao' : 'Interacoes' , 'eventoRotulo' : 'Enviar' , 'Produto' : 'Home' , 'URL' : url_page});
+      // $('#pu-modalSucesso').show() //para teste localhost
+    }
+  });
+}
+
+/* /////////////////////////////////// */
+/* Script Modal Form */
+// Get the modal
+var modalSucesso = document.getElementById("pu-modalSucesso");
+// Get the button that opens the modal
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeSucesso")[0];
+// When the user clicks the button, open the modal
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modalSucesso.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modalSucesso.style.display = "none";
+  }
+}
+
+/* /////////////////////////////////// */
+/* Script Modal Form */
+// Get the modal
+var modalErro = document.getElementById("pu-modalErro");
+// Get the button that opens the modal
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeErro")[0];
+// When the user clicks the button, open the modal
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modalErro.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modalErro.style.display = "none";
+  }
+}
+
+
+
+
+
+
+
+
+

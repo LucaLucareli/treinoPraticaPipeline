@@ -1,0 +1,11 @@
+FROM postgres
+
+COPY ./sql/01-base.sql /docker-entrypoint-initdb.d/
+COPY ./sql/01-base.sql /docker-entrypoint-initdb.d/
+
+ENV POSTGRES_DB="postgres" \
+    POSTGRES_USER="localhost" \
+    POSTGRES_PASSWORD="Devops_luca"
+
+EXPOSE 5432
+CMD ["postgres"]

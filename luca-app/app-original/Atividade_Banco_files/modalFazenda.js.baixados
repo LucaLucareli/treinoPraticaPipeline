@@ -1,0 +1,628 @@
+var dataUrl = {
+  getReferrerUrl: function () {
+    var url_referrer = (window.location != window.parent.location) ? document.referrer : document.location.href;
+    return url_referrer;
+  },
+  getReferrerPage: function () {
+    var url_referrer = (window.location != window.parent.location) ? document.referrer : document.location.href;
+    var current_page = url_referrer.replace(/(http|https):\/\//, '');
+    current_page = current_page.split('/');
+    current_page = (current_page[1]) ? current_page[1] : url_referrer;
+    return current_page;
+  }
+};
+var disparaSMS = false;
+var url_page = window.location.href;
+var modalPix = document.createElement('div');
+var modalPixForm = {
+  container: document.createElement('div'),
+  close: document.createElement('div'),
+  title: document.createElement('h2'),
+  titleMB: document.createElement('h2'),
+  text: document.createElement('p'),
+  titleError: document.createElement('h2'),
+  subtitle: document.createElement('p'),
+  subtitleError: document.createElement('p'),
+  rodapeCerto: document.createElement('p'),
+  button: document.createElement('button'),
+  loading: document.createElement('div'),
+  form: {
+    name: {
+      element: document.createElement('div'),
+      mask: null
+    },
+    email: {
+      element: document.createElement('div'),
+      mask: null
+    },
+    phone: {
+      element: document.createElement('div'),
+      mask: null
+    },
+    cpf: {
+      element: document.createElement('div'),
+      mask: null
+    },
+    isClient: {
+      element: document.createElement('div'),
+      mask: null
+    },
+  }
+};
+var modalPixMessage = {
+  success: document.createElement('div'),
+  error: document.createElement('div')
+};
+
+function createModalPixFormClose(div) {
+  div.classList.add('mlcf-close');
+  div.innerHTML = '<div></div><div></div>';
+  div.onclick = closeModalPix;
+}
+
+function createModalPixFormTitle(title) {
+  title.classList.add('mlcf-title');
+  title.innerHTML = `
+  <p style="font-weight:100; line-height: normal; width: 405px; height: 163px">
+    Abra a sua<br>
+    conta 100% digital<br>
+    e
+    <span style="color: #01874D; font-weight:bold;"> faça tudo pelo app.</span><br>
+  </p>
+  <p style="font-weight: 100; font-size:22px; margin-top: 30px; width: 458px; height: 39px;">
+    Baixe agora mesmo o app e
+    <span style="font-weight: bold; font-size:22px;"> abra sua conta :) </span>
+  </p>
+
+  <div style="width:279px; margin-top: 26px;" class="stores-icon">
+    <a style="margin-right: 20px;" id="loja-android1"
+      href="https://go.onelink.me/nZOl/3244591">
+      <img src="/img/pages/fazenda/android-copy.svg" />
+    </a>
+    <a style="margin-right: 20px;" id="loja-apple1"
+      href="https://go.onelink.me/nZOl/3244591">
+      <img src="/img/pages/fazenda/apple-copy.svg" />
+    </a>
+  </div>
+  `;
+}
+
+function createModalPixFormTitleMB(titleMB) {
+  titleMB.classList.add('mlcf-titleMB');
+  titleMB.innerHTML = `<p style="font-weight:100;"> Abra a sua<br> conta 100% digital<br> e <span style="color: #01874D; font-weight:bold;"> faça tudo pelo app.</span>
+
+  <p style="font-weight: 100; font-size:18px; line-height: 1.4; margin-top: 30px; width: 265px;">Baixe agora mesmo o app e <br> <span style="font-weight: bold; font-size:18px; line-height: 1.4; "> abra sua conta :) </span> </p>
+
+  <div style="width:279px; padding-left: 42px; margin-top: 30px;" class="stores-icon">
+    <a style="margin-right: 20px;" id="loja-android1"
+      href="https://go.onelink.me/nZOl/3244591">
+      <img src="/img/pages/fazenda/android-copy.svg" />
+    </a>
+    <a style="margin-right: 20px;" id="loja-apple1"
+      href="https://go.onelink.me/nZOl/3244591">
+      <img src="/img/pages/fazenda/apple-copy.svg" />
+    </a>
+  </div>
+  `;
+}
+
+function createModalPixFormTitleError(titleError) {
+  titleError.classList.add('mlcf-title');
+  titleError.classList.add('mlcf-title-error');
+  titleError.style.display = 'none';
+  titleError.innerHTML = 'Ops...';
+}
+
+function createModalPixFormSubtitleError(subtitleError) {
+  subtitleError.classList.add('mlcf-subtitleError');
+  subtitleError.style.display = 'none';
+  subtitleError.innerHTML = '<span style="font-size: 42px; color: #ff2845; font-weight: bold;"><h2>Ops...</h2></span>Por favor, verifique se as informações <br>estão corretas:';
+}
+
+function createModalPixFormInput(div, id, placeholder, text) {
+  div.classList.add('mlcf-input');
+  div.innerHTML = `
+      <input id="${id}" type="text" placeholder="${placeholder}" />
+      <label for="${id}">${text}</label>
+    `;
+}
+
+/*function createModalPixFormCheckbox(div, id, text) {
+  div.classList.add('mlcf-checkbox-container');
+  div.innerHTML = `
+        <input class="mlcf-checkbox" id="${id}" type="checkbox">
+        <label for="${id}">${text}</label>
+    `;
+} */
+
+function createModalPixFormRodape(rodapeCerto) {
+  rodapeCerto.classList.add('mlcf-rodapeCerto');
+  rodapeCerto.innerHTML = 'Ao enviar seus dados, você autoriza que o Banco Original entre em contato e declara estar ciente da <span id="politica" style="color:#01874D"><a target="_blank" href="https://www.original.com.br/politicaprivacidade/"><u>Política de Privacidade<u></a></span>.';
+}
+
+function createModalPixFormText(text) {
+  text.classList.add('mlcf-text');
+  text.innerHTML = '<p>A abertura de conta e a concessão de limites de crédito estão sujeitas a análise e aprovação. Saiba mais em <a target="_blank" href="https://www.original.com.br/documentosimportantes/"><u><i>www.original.com.br/documentosimportantes.<u></i></a> </p>';
+}
+
+window.onload = function() {
+  disparaSMS = !APP.isMobile ? true : false;
+};
+
+function createModalPixFormButton(button) {
+  button.classList.add('mlcf-button');
+  button.classList.add('btn');
+
+  $(document).ready(function () {
+    var url_page = window.location.href;
+
+    $('.mlcf-button.btn').on("click", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'Formulario-Campos' , 'eventoRotulo' : 'Botao-enviar' , 'Produto' : 'OpenFinance' , 'URL' : url_page});
+    });
+  });
+  button.innerHTML = 'CONTINUAR';
+}
+
+function createModalPixLoading(loading) {
+  loading.classList.add('modal-pix-loading');
+  loading.style.display = 'none';
+  loading.innerHTML = '<div class="spinner"> <div class="bounce1"></div> <div class="bounce2"></div> <div class="bounce3"></div> </div>';
+}
+
+function toggleModalPixFormError(hasError, input) {
+  if (hasError) {
+    input.classList.add('mlcf-input-error')
+  } else {
+    input.classList.remove('mlcf-input-error')
+  }
+
+  var hasAnyError = true;
+
+  if (
+    !modalPixForm.form.name.element.classList.contains('mlcf-input-error') &&
+    !modalPixForm.form.email.element.classList.contains('mlcf-input-error') &&
+    !modalPixForm.form.cpf.element.classList.contains('mlcf-input-error') &&
+    !modalPixForm.form.phone.element.classList.contains('mlcf-input-error')
+  ) {
+    hasAnyError = false;
+  }
+
+  modalPixForm.title.style.display = hasAnyError ? 'none' : '';
+  modalPixForm.titleMB.style.display = hasAnyError ? 'none' : '';
+  modalPixForm.titleError.style.display = hasAnyError ? '' : 'none';
+  // modalPixForm.rodape.style.display = hasAnyError ? 'none' : '';
+  modalPixForm.subtitleError.style.display = hasAnyError ? '' : 'none';
+}
+
+function enabledDisableButton() {
+  if (
+    modalPixForm.form.name.element.classList.contains('mlcf-input-error') ||
+    modalPixForm.form.email.element.classList.contains('mlcf-input-error') ||
+    modalPixForm.form.cpf.element.classList.contains('mlcf-input-error') ||
+    modalPixForm.form.phone.element.classList.contains('mlcf-input-error') ||
+    modalPixForm.form.name.element.children[0].value === "" ||
+    modalPixForm.form.email.element.children[0].value === "" ||
+    modalPixForm.form.cpf.element.children[0].value === "" ||
+    modalPixForm.form.phone.element.children[0].value === "" ||
+    modalPixForm.form.name.element.children[0].value == null ||
+    modalPixForm.form.email.element.children[0].value == null ||
+    modalPixForm.form.cpf.element.children[0].value == null ||
+    modalPixForm.form.phone.element.children[0].value == null
+  ) {
+    modalPixForm.button.setAttribute('disabled', true);
+    modalPixForm.button.classList.add('disableButton');
+  } else {
+    modalPixForm.button.removeAttribute('disabled');
+    modalPixForm.button.classList.remove('disableButton');
+    modalPixForm.button.classList.add('enableButton');
+  }
+}
+
+var REGEX_VALIDATION_NAME_FIELD = "[a-záàâãéèêíïóôõöúçñA-ZÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ ]+$";
+
+var isNomeCaracteresValid = function() {
+  var regexNomeCaracteresValid = new RegExp(REGEX_VALIDATION_NAME_FIELD);
+
+  var resultCaracteresValidation = regexNomeCaracteresValid.test( $("#lead-name").val().trim() );
+
+  if ( resultCaracteresValidation ) {
+    return true;
+  }
+  return false;
+};
+
+
+function createValidations() {
+  modalPixForm.form.name.element.children[0].onblur = function () {
+    this.value = this.value.replace(/\s\s+/g, '');
+    this.value = this.value.trim();
+    if (this.value) {
+      if (this.value.split('').length < 1 || !isNomeCaracteresValid() ) {
+        toggleModalPixFormError(true, modalPixForm.form.name.element);
+      } else {
+        if (!this.value.split(' ').every(part => part.length >= 1) || !isNomeCaracteresValid()) {
+          toggleModalPixFormError(true, modalPixForm.form.name.element);
+        } else {
+          toggleModalPixFormError(false, modalPixForm.form.name.element);
+        }
+      }
+    }
+    enabledDisableButton();
+  }
+
+  modalPixForm.form.name.element.children[0].onblur = function () {
+    if (this.value) {
+      if (this.value.split('').length < 1 || !isNomeCaracteresValid() ) {
+        toggleModalPixFormError(true, modalPixForm.form.name.element);
+      } else {
+        if (!this.value.split('').every(part => part.length >= 1) || !isNomeCaracteresValid()) {
+          toggleModalPixFormError(true, modalPixForm.form.name.element);
+        } else {
+          toggleModalPixFormError(false, modalPixForm.form.name.element);
+        }
+      }
+    }
+    enabledDisableButton();
+  }
+
+  var cpfValido = false;
+  function isCpfValid() {
+
+    if (!validarCPF($("#lead-cpf").val())) {
+      cpfValido = false
+      return cpfValido;
+    }
+    cpfValido = true
+    return cpfValido;
+  };
+
+  function validarCPF(cpf) {
+    cpf = cpf.replace(/[^\d]+/g, '');
+    if (cpf == '')
+      return false;
+
+    // Elimina CPFs invalidos conhecidos
+
+    if (cpf.length != 11 || cpf == "00000000000" || cpf == "11111111111"
+
+      || cpf == "22222222222" || cpf == "33333333333"
+
+      || cpf == "44444444444" || cpf == "55555555555"
+
+      || cpf == "66666666666" || cpf == "77777777777"
+
+      || cpf == "88888888888" || cpf == "99999999999")
+
+      return false;
+
+    // Valida 1o digito
+
+    add = 0;
+
+    for (i = 0; i < 9; i++)
+
+      add += parseInt(cpf.charAt(i)) * (10 - i);
+
+    rev = 11 - (add % 11);
+
+    if (rev == 10 || rev == 11)
+
+      rev = 0;
+
+    if (rev != parseInt(cpf.charAt(9)))
+
+      return false;
+
+    // Valida 2o digito
+
+    add = 0;
+
+    for (i = 0; i < 10; i++)
+
+      add += parseInt(cpf.charAt(i)) * (11 - i);
+
+    rev = 11 - (add % 11);
+
+    if (rev == 10 || rev == 11)
+
+      rev = 0;
+
+    if (rev != parseInt(cpf.charAt(10)))
+
+      return false;
+
+    return true;
+  }
+
+  modalPixForm.form.cpf.element.children[0].onmouseout = function () {
+    this.value = this.value.trim();
+    isCpfValid();
+    if (this.value) {
+      if (!modalPixForm.form.cpf.mask.masked.isComplete || !cpfValido) {
+        toggleModalPixFormError(true, modalPixForm.form.cpf.element);
+      } else {
+        toggleModalPixFormError(false, modalPixForm.form.cpf.element);
+      }
+    }
+    enabledDisableButton();
+  }
+
+  modalPixForm.form.phone.element.children[0].onblur = function () {
+    this.value = this.value.trim();
+    if (this.value) {
+      if (!modalPixForm.form.phone.mask.masked.isComplete) {
+        toggleModalPixFormError(true, modalPixForm.form.phone.element);
+      } else {
+        toggleModalPixFormError(false, modalPixForm.form.phone.element);
+      }
+    }
+    enabledDisableButton();
+  }
+
+  modalPixForm.form.email.element.children[0].onblur = function () {
+    this.value = this.value.trim();
+    this.value = this.value.toLowerCase();
+    if (this.value) {
+      var test = /^[a-z0-9_\.-]+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/.test(this.value);
+      if (!test) {
+        toggleModalPixFormError(true, modalPixForm.form.email.element);
+      } else {
+        toggleModalPixFormError(false, modalPixForm.form.email.element);
+      }
+    }
+    enabledDisableButton();
+  }
+}
+
+function triggerEnabledDisableButton() {
+  // modalPixForm.form.name.element.children[0].onkeyup = enabledDisableButton;
+  // modalPixForm.form.phone.element.children[0].onkeyup = enabledDisableButton;
+  // modalPixForm.form.cpf.element.children[0].onkeyup = enabledDisableButton;
+  // modalPixForm.form.email.element.children[0].onkeyup = enabledDisableButton;
+}
+
+function createModalPixForm() {
+  modalPixForm.container.classList.add('modal-lead-container-form');
+  createModalPixFormClose(modalPixForm.close);
+  createModalPixFormTitle(modalPixForm.title);
+  createModalPixFormTitleMB(modalPixForm.titleMB);
+  //createModalPixFormTitleError(modalPixForm.titleError);
+  createModalPixFormSubtitleError(modalPixForm.subtitleError);
+  createModalPixFormInput(modalPixForm.form.name.element, 'lead-name', 'Nome', 'Nome');
+  createModalPixFormInput(modalPixForm.form.email.element, 'lead-email', 'E-mail', 'E-mail');
+  createModalPixFormInput(modalPixForm.form.phone.element, 'lead-phone', 'Celular para receber SMS', 'Celular para receber SMS');
+  createModalPixFormInput(modalPixForm.form.cpf.element, 'lead-cpf', 'CPF', 'CPF');
+ // createModalPixFormCheckbox(modalPixForm.form.isClient.element, 'is-client', 'Já sou cliente Original');
+  createModalPixFormRodape(modalPixForm.rodapeCerto);
+  createModalPixFormButton(modalPixForm.button);
+  createModalPixFormText(modalPixForm.text);
+  createModalPixLoading(modalPixForm.loading);
+  modalPixForm.form.phone.mask = IMask(modalPixForm.form.phone.element.children[0], { mask: '(00) 00000-0000' });
+  modalPixForm.form.cpf.mask = IMask(modalPixForm.form.cpf.element.children[0], { mask: '000.000.000-00' });
+  modalPixForm.container.append(modalPixForm.close);
+  modalPixForm.container.append(modalPixForm.title);
+  modalPixForm.container.append(modalPixForm.titleMB);
+  //modalPixForm.container.append(modalPixForm.titleError);
+  modalPixForm.container.append(modalPixForm.subtitleError);
+  var formContainer = document.createElement('div');
+  formContainer.classList.add('mlcf-form-container');
+  formContainer.append(modalPixForm.form.name.element);
+  formContainer.append(modalPixForm.form.email.element);
+  formContainer.append(modalPixForm.form.phone.element);
+  formContainer.append(modalPixForm.form.cpf.element);
+  formContainer.append(modalPixForm.rodapeCerto);
+
+ // modalPixForm.container.append(modalPixForm.form.isClient.element);
+
+  $(document).ready(function () {
+    var url_page = window.location.href;
+
+    $('#lead-name').on('keypress', function (e) {
+      var blockSpecialRegex = /[~`!@#$%^&()_={}[\]:;,.<>+\/?-]/;
+        var key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        console.log(key)
+        if(blockSpecialRegex.test(key) || $.isNumeric(key)){
+          e.preventDefault();
+          return false;
+        }
+      });
+
+    $('#lead-name').on("change", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'Formulario-Campos' , 'eventoRotulo' : 'Nome' , 'Produto' : 'OpenFinance' , 'URL' : url_page });
+    });
+
+    $('#lead-email').on("change", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'Formulario-Campos' , 'eventoRotulo' : 'Email' , 'Produto' : 'OpenFinance' , 'URL' : url_page });
+    });
+
+    $('#lead-phone').on("change", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'Formulario-Campos' , 'eventoRotulo' : 'Celular' , 'Produto' : 'OpenFinance' , 'URL' : url_page });
+    });
+
+    $('#lead-cpf').on("change", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'Formulario-Campos' , 'eventoRotulo' : 'CPF' , 'Produto' : 'CPF' , 'URL' : url_page });
+    });
+
+    $('#is-client').on("click", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'Formulario-Campos' , 'eventoRotulo' : 'É cliente?' , 'Produto' : 'OpenFinance' , 'URL' : url_page });
+    });
+  });
+
+  formContainer.append(modalPixForm.button);
+  formContainer.append(modalPixForm.text);
+  formContainer.append(modalPixForm.loading);
+  modalPixForm.button.onclick = sendForm;
+  modalPixForm.button.setAttribute('disabled', true);
+  modalPixForm.container.append(formContainer);
+  createValidations();
+  triggerEnabledDisableButton();
+}
+
+function createModalPixMessage() {
+  if (APP.isMobile) {
+    modalPixMessage.success.classList.add('modal-lead-message-container');
+    modalPixMessage.success.style.display = 'none';
+    modalPixMessage.success.innerHTML = `
+    <img class="mlmc-icon" src="/img/icons-svg/icons/sucesso.svg">
+    <h2 class="mlmc-title">Falta pouco!</h2>
+    <p class="mlmc-subtitle">Agora baixe o APP do Banco Original, finalize seu cadastro
+    e pronto!</p>
+    <a  href="https://go.onelink.me/nZOl/90568b79" <button class="btn mlmc-button"><p style="margin-top: 14px;"> BAIXAR O APP </p></button> </a>
+    <div class="mlcf-close" onclick="closeModalPix()">X</div>
+    `;
+    }
+  else {
+    modalPixMessage.success.classList.add('modal-lead-message-container');
+    modalPixMessage.success.style.display = 'none';
+    modalPixMessage.success.innerHTML = `
+    <div style="margin: 0px 326px -430px 0;">
+    <a  href="/" > <img style="width: 134px; height: 40px; margin: 0 375px 51px 0; object-fit: contain;" src="/img/pages/cartoes/LogoBancoLetra.png"></a>
+    <p class="mlcf-title"> <span style="color: #01874D Falta pouco! </span> <br> <span style=" width: 336px; height: 85px;  font-size: 18px; font-weight: 500; font-stretch: normal; font-style: normal; line-height: 80%;letter-spacing: normal; color: #ffffff; "> Agora aponte seu celular para o QR <br> Code, baixe o APP do Banco Original,<br> finalize seu cadastro e pronto! </span> </p>
+    </div>
+    <div style="margin: 0 0 100px 500px;">
+    <a  href="https://go.onelink.me/nZOl/90568b79" target="_blank"> <img class="qrcode" style="width: 260px; height: 260px; cursor:pointer;" src="/img/pages/cartoes/qrCodeCartoes.png"></a>
+    </div>
+    <div class="mlcf-close" onclick="closeModalPix()">X</div>
+    `;
+  }
+
+  modalPixMessage.error.classList.add('modal-lead-message-container');
+  modalPixMessage.error.classList.add('modal-lead-message-error-container');
+  modalPixMessage.error.style.display = 'none';
+  modalPixMessage.error.innerHTML = `
+        <img class="mlmc-icon" src="/img/icons-svg/icons/sad.svg">
+        <h2 class="mlmc-title">Ops…</h2>
+        <p class="mlmc-subtitle">Ocorreu algo inesperado, tente novamente em alguns minutos.</p>
+        <button class="btn mlmc-button" onclick="closeModalPix()">OK</button>
+    `;
+
+  $(document).ready(function () {
+    var url_page = window.location.href;
+
+    $('.mlmc-button').on("click", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'Formulario-Campos' , 'eventoRotulo' : 'Botao-Erro' , 'Produto' : 'OpenFinance' , 'URL' : url_page});
+    });
+
+    $('.qrcode').on("click", function (e) {
+      dataLayer.push({'event' : 'gaevent' , 'eventoCategoria' : 'LP-OPBK_Forms' , 'eventoAcao' : 'QR-Code' , 'eventoRotulo' : 'Link-QrCode' , 'segmento' : 'Formulario-Precadastro  ' , 'URL' : url_page});
+    });
+
+
+  });
+}
+
+function createModalPix() {
+  modalPix.classList.add('modal-lead');
+  modalPix.append(modalPixForm.container);
+  modalPix.append(modalPixMessage.success);
+  modalPix.append(modalPixMessage.error);
+  modalPix.style.display = 'none';
+  document.body.append(modalPix);
+}
+
+function openModalPix() {
+  modalPixForm.form.name.element.children[0].value = '';
+  modalPixForm.form.email.element.children[0].value = '';
+  modalPixForm.form.phone.element.children[0].value = '';
+  modalPixForm.form.cpf.element.children[0].value = '';
+  modalPixForm.form.phone.mask.value='';
+  modalPixForm.form.cpf.mask.value='';
+  modalPix.style.display = 'flex';
+  modalPixMessage.success.style.display = 'none';
+  modalPixMessage.error.style.display = 'none';
+  modalPixForm.container.style.display = 'flex';
+  dataLayer.push({'event' : 'pagetrack' , 'PNPagina': dataUrl.getReferrerPage() , 'Produto' : 'OpenFinance' , 'URL' : url_page  });
+}
+
+function closeModalPix() {
+  modalPix.style.display = 'none';
+  toggleModalPixFormError(false, modalPixForm.form.name.element);
+  toggleModalPixFormError(false, modalPixForm.form.phone.element);
+  toggleModalPixFormError(false, modalPixForm.form.cpf.element);
+  toggleModalPixFormError(false, modalPixForm.form.email.element);
+}
+
+function sendForm() {
+  modalPixForm.loading.style.display = '';
+  var data = {
+    "cliente": {
+      "nome": modalPixForm.form.name.element.children[0].value.normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z\s])/g, ''),
+      "email": modalPixForm.form.email.element.children[0].value,
+      "telefone": modalPixForm.form.phone.element.children[0].value.replace(/[^\d]+/g, ''),
+      "documento": modalPixForm.form.cpf.element.children[0].value.replace(/[^\d]+/g, ''),
+     // "indicadorCliente": modalPixForm.form.isClient.element.children[0].checked,
+      "cpf":  modalPixForm.form.cpf.element.children[0].value.replace(/[^\d]+/g, ''),
+      //"aceite": disparaSMS
+    },
+    "aplicacao": {
+      "origem": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "nomeCampanha": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "codigoParceria": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "descCampanha": getParameterByName('campanha')?getParameterByName('campanha'): "LP_AbrirConta",
+      "utmMedium": getParameterByName('utm_medium'),
+      "utmSource": getParameterByName('utm_source'),
+      "utmCampaign": getParameterByName('utm_campaign'),
+      "utmContent":getParameterByName('utm_content'),
+      "utmTerm": getParameterByName('utm_term')
+    }
+  };
+
+  $.ajax({
+    type: "POST",
+    url: "/pix/leads",
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+      'key': 'v6qxwjMYgbZyWn12t6V2rAZmzy3eOaqeFG96'
+    },
+    success: function (msg) {
+      modalPixForm.loading.style.display = 'none';
+      modalPixForm.container.style.display = 'none';
+      $('.modal-lead').css('display', 'none');
+      $('#pu-modalSucesso').show();
+      dataLayer.push({'event' : 'pagetrack' , 'PNPagina': dataUrl.getReferrerPage() , 'Produto' : 'OpenFinance' , 'URL' : url_page });
+    },
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      modalPixForm.loading.style.display = 'none';
+      modalPixForm.container.style.display = 'none';
+      $('.modal-lead').css('display', 'none');
+      $('#pu-modalErro').show();
+      dataLayer.push({'event' : 'pagetrack' , 'PNPagina': dataUrl.getReferrerPage() , 'Produto' : 'OpenFinance' , 'URL' : url_page  });
+    }
+
+  });
+}
+
+/*$('#lead-name').on('keypress', function (e) {
+  var blockSpecialRegex = /[~`!@#$%^&()_={}[\]:;,.<>+\/?-]/;
+    var key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+    console.log(key)
+    if(blockSpecialRegex.test(key) || $.isNumeric(key)){
+      e.preventDefault();
+      return false;
+    }
+  });*/
+
+/*modalPixForm.form.name.element.children[0].onkeyup = function () {
+  this.value = this.value.replace(/\s\s+/g, ' ');
+  this.value = this.value.trim();
+
+    if (this.value.split(' ').length < 2 || !isNomeCaracteresValid() ) {
+      toggleModalPixFormError(true, modalPixForm.form.name.element);
+    } else {
+      if (!this.value.split(' ').every(part => part.length >= 2) || !isNomeCaracteresValid()) {
+        toggleModalPixFormError(true, modalPixForm.form.name.element);
+      } else {
+        toggleModalPixFormError(false, modalPixForm.form.name.element);
+      }
+    }
+  }
+  enabledDisableButton();
+} */
+
+function initModalPix() {
+  createModalPixForm();
+  createModalPixMessage();
+  createModalPix();
+}

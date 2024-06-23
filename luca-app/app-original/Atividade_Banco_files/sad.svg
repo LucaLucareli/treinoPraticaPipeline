@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="65px" viewBox="0 0 54 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>F3BE9244-C985-451B-B5BB-7D86FB5627F6</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="UI" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modal_LEAD_erro_servidor" transform="translate(-692.000000, -300.000000)">
+            <g id="Group-2" transform="translate(515.000000, 302.000000)">
+                <g id="Group" transform="translate(178.000000, 0.000000)">
+                    <path d="M2.40608765,13.7750842 L24.0939124,0.539846963 C25.2734031,-0.179948988 26.7265969,-0.179948988 27.9060876,0.539846963 L49.5939124,13.7750842 C50.7734031,14.4948801 51.5,15.8251889 51.5,17.2646365 L51.5,43.7351109 C51.5,45.1747028 50.7734031,46.5050116 49.5939124,47.2249519 L27.9060876,60.4600448 C26.7265969,61.1799851 25.2734031,61.1799851 24.0939124,60.4600448 L2.40608765,47.2249519 C1.2265969,46.5050116 0.5,45.1747028 0.5,43.7351109 L0.5,17.2646365 C0.5,15.8251889 1.2265969,14.4948801 2.40608765,13.7750842" id="Fill-1-Copy-39" stroke="#FF2845" stroke-width="2.4"></path>
+                    <line x1="16.0142857" y1="43.5" x2="38.3" y2="35.1666667" id="Line" stroke="#FF2845" stroke-width="2.4" stroke-linecap="round"></line>
+                    <circle id="Oval" fill="#FF2845" cx="16.5" cy="28" r="2"></circle>
+                    <circle id="Oval-Copy" fill="#FF2845" cx="35.5" cy="28" r="2"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

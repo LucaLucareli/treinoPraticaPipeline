@@ -1,0 +1,945 @@
+<!doctype html> <!--[if lt IE 7]><html class="ie6 ie-old"><![endif]--> <!--[if IE 7]><html class="ie7 ie-old"><![endif]--> <!--[if IE 8]><html class="ie8 ie-old"><![endif]--> <!--[if IE 9]><html class="ie9 ie-old"><![endif]--> <!--[if gt IE 8]><!--> <html> <!--<![endif]--> <head itemscope itemtype="http://schema.org/WebSite"> <meta charset='utf-8'> <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> <meta name="description" content=""> <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon"> <link rel="icon" href="/img/favicon.ico" type="image/x-icon"> <title itemprop="name">Banco Original</title> <link rel="stylesheet" href="/js/outdatedbrowser/outdatedbrowser.min.css"> <script type='text/javascript' src='/js/jquery.min.js?v=1.298.0.0'></script> <script type='text/javascript' src='/js/ls.respimg.min.js?v=1.298.0.0'></script> <script type="text/javascript"> window.arrRanges = ''; </script> <script src="https://use.typekit.net/iuu4ctl.js"></script> <script> if (document.location.pathname != "/contatoform") {
+      var scriptTag = document.createElement('script');
+      scriptTag.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-HV6JK2DKZM');
+      document.head.appendChild(scriptTag);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-HV6JK2DKZM');
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-53KKSD9');
+    } </script> <script src="https://www.googleoptimize.com/optimize.js?id=OPT-PRXLW2Q"></script> <script type="application/ld+json"> {
+        "@context" : "http://schema.org",
+        "@type"    : "Organization",
+        "url"      : "https://www.original.com.br",
+        "logo"     : "https://www.original.com.br/img/stamp.png"
+      } </script> <script type="application/ld+json"> {
+        "@context" : "http://schema.org",
+        "@type"    : "Person",
+        "name"     : "Banco Original",
+        "url"      : "https://www.original.com.br",
+        "sameAs"   : [
+          "https://www.facebook.com/BancoOriginal/",
+          "http://instagram.com/bancooriginal/",
+          "https://www.youtube.com/user/BancoOriginal",
+          "https://www.linkedin.com/company/banco-original",
+          "https://medium.com/pense-original",
+          "https://twitter.com/bancooriginal"
+        ]
+      } </script> <script type="text/javascript"> !function (a) { "use strict"; var b = function (b, c, d) { function j(a) { return e.body ? a() : void setTimeout(function () { j(a) }) } function l() { f.addEventListener && f.removeEventListener("load", l), f.media = d || "all" } var g, e = a.document, f = e.createElement("link"); if (c) g = c; else { var h = (e.body || e.getElementsByTagName("head")[0]).childNodes; g = h[h.length - 1] } var i = e.styleSheets; f.rel = "stylesheet", f.href = b, f.media = "only x", j(function () { g.parentNode.insertBefore(f, c ? g : g.nextSibling) }); var k = function (a) { for (var b = f.href, c = i.length; c--;)if (i[c].href === b) return a(); setTimeout(function () { k(a) }) }; return f.addEventListener && f.addEventListener("load", l), f.onloadcssdefined = k, k(l), f }; "undefined" != typeof exports ? exports.loadCSS = b : a.loadCSS = b }("undefined" != typeof global ? global : this); </script> <link href='/css/common.css?v=1.298.0.0' rel='stylesheet'> <script> loadCSS("/css/errors/errors.css?v=1.298.0.0"); </script> <script type="text/javascript"> (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "cmmppkcf4w"); </script> <script >bazadebezolkohpepadr="515957096"</script><script type="text/javascript" src="https://www.original.com.br/akam/13/1ec0e2f8"  defer></script></head> <body class="loading"> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53KKSD9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <div class="preloader"> <div class="spinner"> <div class="bounce1"></div> <div class="bounce2"></div> <div class="bounce3"></div> </div> </div> <div class="viewport-primary"> <div id="onboarding" class="modal mob-step-intro"> <div class="cover-modal cover-container b-lazy vh100" data-src="/img/onboarding/cover/cover-1.jpg" mobile="/img/onboarding/cover/320/cover-1.jpg" tablet="/img/onboarding/cover/767/cover-1.jpg"> </div> <header class="cta-toolbar closed"> <a class="btn-close" href="javascript:void(0)"></a> <a class="logotype" href="../" title="Banco Original">Banco Original</a> </header> <div id="cta-container-wrapper"> <div id="cta-content"> <div id="new-lead"> <div class="cta-container"> <div class="col-l"> <header> <h2 class="title">Simples, Rápido e Original.</h2> <h2 class="subtitle">Sua abertura de conta começa aqui.</h2> <h3 class="desc">Preparado? O primeiro passo é preencher alguns dados pessoais, para garantirmos que tenha um cadastro único e oferecermos ainda mais facilidade para você.</h3> <p class="disclaimer">*A abertura de conta corrente está sujeita à análise e à aprovação.</p> </header> </div> <div class="col-r box-form"> <form class="form-step-1" action='#'> <p><input id="leadoP8mJQField" class="field oP8mJQ" type="email" tabindex="1" name="leadoP8mJQField" placeholder="E-mail" autocomplete="off" capitalise="off" required></p> <p><input id="leadfqCoOQField" class="field fqCoOQ" type="text" tabindex="2" name="leadfqCoOQField" placeholder="CPF" required></p> <p><input id="leadqXyv5vField" class="field qXyv5v" type="text" tabindex="3" name="leadqXyv5vField" placeholder="CEP" required></p> <div class="submit-group"> <button id="send" class="btn send" type="submit"> <span>Continuar</span> <div class="spinner"> <div class="bounce1"></div> <div class="bounce2"></div> <div class="bounce3"></div> </div> </button> </div> <span id="onboarding-error-message">Ocorreu um problema na gravação de seus dados.<br>Tente novamente mais tarde.</span> </form> </div> <div class="disclaimer-bottom"> <p>*A abertura de conta corrente está sujeita à análise e à aprovação.</p> </div> </div> </div> <div id="all-locations"> <div class="cta-container"> <header> <h2 class="title">Baixe o app Seja Original e abra<br> sua conta 100% online, pelo celular</h2> <div class="desc"> <p>Para celulares Android, basta clicar no botão abaixo.</p> <p>O Google Play instalará o app automaticamente em seu aparelho.</p> <p>Ou, para iPhone, acesse a Apple Store através de seu<br> aparelho e busque pelo app &ldquo;Seja Original&rdquo;.</p> </div> </header> <nav class="downloads only-desktop"> <ul class="downloads-wrapper"> <li class="ios"><a href='https://c00.adobe.com/v3/819536ab10df7348bb6ed94544c57fe1ec571c9637a44f157975e526be5a5a8f/start?a_dl=5772f6ea983340ca4603402f' target="_blank"><img src="/img/onboarding/app-store.png" alt="Disponível na App Store"></a></li> <li class="android"><a href='https://c00.adobe.com/v3/819536ab10df7348bb6ed94544c57fe1ec571c9637a44f157975e526be5a5a8f/start?a_dl=577c064cb03b05f77c696dd5' target="_blank"><img src="/img/onboarding/google-play.png" alt="Disponível na Google Play"></a></li> </ul> </nav> <nav class="downloads only-mobile"> <ul class="downloads-wrapper"> <li class="ios"><a href="https://c00.adobe.com/v3/819536ab10df7348bb6ed94544c57fe1ec571c9637a44f157975e526be5a5a8f/start?a_dl=5772f6a7983340ca4603402a" target="_blank"><img src="/img/onboarding/app-store.png" alt="Disponível na App Store"></a></li> <li class="android"><a href="https://c00.adobe.com/v3/819536ab10df7348bb6ed94544c57fe1ec571c9637a44f157975e526be5a5a8f/start?a_dl=5772f6a7983340ca4603402a" target="_blank"><img src="/img/onboarding/google-play.png" alt="Disponível na Google Play"></a></li> </ul> </nav> <div class="disclaimer"> <p>*A abertura de conta corrente está sujeita à análise e à aprovação.</p> </div> </div> </div> </div> </div> </div> <nav id="nav-mobile" class="nav-mobile"> <a class="logo" href="/" title="Banco Original"> <h1>Banco Original</h1> </a> <a class="nav-bt" rel="nav-bt" href="#"></a> <div id="nav-expand" class="nav-expand"> <div class="nav-item nav-item-nova-conta"> <a class="expandable expandable-nova-conta" rel="nav-subitens">Abrir nova conta</a> <div class="nav-subitens"> <div class="nav-nova-conta nav-nova-conta_1"> <a class="nova-conta-item nova-conta-item_para-voce" href="/abrir-conta"> <div class="middle"> <h4>Para Você</h4> <p>Sem filas, sem burocracia e 100% digital. Abra sua conta totalmente online.</p> </div> </a> <div class="nova-conta-item nova-conta-item_para-sua-empresa"> <div class="middle"> <h4>Para sua empresa</h4> <p>Individual, com mais de um sócio, Corporate ou Agro. Temos uma conta para cada necessidade e perfil de negócio.</p> </div> </div> </div> <div class="nav-nova-conta nav-nova-conta_2"> <div class="nav-nova-conta-voltar"> <span>Para sua empresa</span> </div> <div class="nav-conta nav-conta_pessoa-unica"> <div class="middle"> <h5>Conta Pessoa Única</h5> <p>A solução para empreendedores individuais (MEI, EI e EIRELI) que une as contas PF + PJ em um mesmo app. </p> <a class="bt-abrir-conta" href="/pessoaunica">Abrir conta</a> </div> </div> <div class="nav-conta nav-conta_sociedades"> <div class="middle"> <h5>Conta Empresas</h5> <p>Mais negócios, menos burocracia, em um modelo de conta 100% digital desenhado para empresas com mais de um sócio.</p> <a href="/contatoform" class="bt-abrir-conta">FALE CONOSCO</a> </div> </div> <div class="nav-conta nav-conta_corporate"> <div class="middle"> <h5>Conta Corporate</h5> <p>Inovação em serviços financeiros para grandes corporações com faturamento anual acima de 300MM. </p> <a class="bt-abrir-conta" href="/atendimento">Entre em contato</a> </div> </div> <div class="nav-conta nav-conta_agronegocio"> <div class="middle"> <h5>Conta Agronegócio</h5> <p>Para produtores rurais que procuram as melhores soluções em agricultura e pecuária.</p> <a class="bt-abrir-conta" href="/atendimento">Entre em contato</a> </div> </div> </div> </div> </div> <div class="nav-item nav-item-acessar-conta"> <a class="expandable" rel="nav-subitens">Acessar Conta</a> <div class="nav-subitens"> <a href='https://meu.original.com.br/'><span>Para você</span></a> <a href='https://meu.original.com.br/'><span>Para você e sua empresa</span></a> <a href='https://empresas.original.com.br/login'><span>Empresas</span></a> <a href='https://ibpj.original.com.br/cas/index.jsp'><span>Corporate</span></a> <a href='https://ibpj.original.com.br/cas/index.jsp'><span>Agronegócio</span></a> </div> </div> <div class="nav-item"> <a href="/openfinance"> <h3 style="font-size: 22px; font-weight: 300; color: #fff; text-transform: none"> <span style="font-weight: bold; color: #00a857">Open</span>Finance </h3> </a> </div> <div class="nav-item"> <a href="/pix"><img src="/img/nav/pix-header.svg" style="vertical-align:middle"></a> </div> <div class="nav-item"> <a class="expandable" id="para-voce" rel="nav-subitens">Para você</a> <div class="nav-subitens"> <a href="/"><span>Início</span></a> <a href="/contacorrente"><span>Conta Corrente</span></a> <a href="/cartoes"><span>Cartões</span></a> <a href="/emprestimo"><span>Empréstimo</span></a> <a href="/dinheirodevolta"><span>Dinheiro de Volta</span></a> <a href="/portabilidade"><span>Portabilidade</span></a> <a href="/investimentos"><span>Investimentos</span></a> <a href="/seguros"><span>Seguros</span></a> </div> </div> <div class="nav-item"> <a class="expandable" id="para-sua-empresa" rel="nav-subitens">Para sua empresa</a> <div class="nav-subitens"> <a href="/paravoceesuaempresa"><span>Conta Pessoa Única<br><small>Empresas MEI, EI e SLU</small></span></a> <a href="/empresas"><span>Conta Empresas<br><small>Empresas com mais de um sócio</small></span></a> <a href="/corporate"><span>Conta Corporate<br><small>Empresas com faturamento anual acima de 300MM</small></span></a> <a href="/agronegocio"><span>Conta Agronegócio<br><small>Para produtores rurais</small></span></a> </div> </div> <div class="nav-item"> <a class="expandable" rel="nav-subitens">Sobre o Original</a> <div class="nav-subitens"> <a href="/institucional"><span>Institucional</span></a> <a href="/governanca"><span>Governança</span></a> <a href="/relacoes"><span>Relações com Investidores</span></a> </div> </div> <div class="nav-item"> <a id="btn-telefone-mobile">Ajuda</a> </div> </div> </nav> <div style="display: none !important"> <div id="resp-svg-0" class="svg"></div> <div id="resp-svg-1" class="svg"></div> <div id="resp-svg-2" class="svg"></div> <div id="resp-svg-3" class="svg"></div> <div id="resp-svg-4" class="svg"></div> <div id="resp-svg-5" class="svg"></div> <div id="resp-svg-6" class="svg"></div> </div> <style> /* The Modal (background) */
+      .modal-telefone {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 100;
+        /* Sit on top */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        overflow-x: hidden !important;
+        /* Enable scroll if needed */
+        background: #1A1B1A;
+      }
+    
+      .bg-telefone {
+        background: url(/img/covers/homepf/bg-telefone-dsk.jpg) no-repeat center top;
+        background-size: cover;
+      }
+    
+    
+      /* Modal Content */
+      .modal-content-telefone {
+        height: 2578px;
+        width: 100%;
+        max-width: 1400px;
+        padding: 10% 10%;
+        margin: 0 auto;
+      }
+    
+    
+      /* The Close Button */
+      .close-telefone-mobile {
+        color: #00a857;
+        position: fixed;
+        top: 20px;
+        right: 28px;
+        font-size: 34px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        align-self: flex-end;
+        z-index: 1;
+        cursor: pointer;
+      }
+    
+      .tel-title-top {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 68px;
+        color: #FFF;
+        width: 857px;
+        padding-bottom: 170px;
+      }
+    
+      .grid-template-columns-telefone3 {
+        display: grid;
+        grid-template-columns: 386px 316px auto;
+        grid-gap: 5%;
+        padding: 10px;
+        padding-bottom: 5%;
+      }
+    
+      .grid-template-columns-telefone2 {
+        display: grid;
+        grid-template-columns: 386px auto;
+        grid-gap: 5%;
+        padding: 10px;
+        padding-bottom: 5%;
+      }
+    
+      .green-title-tel {
+        color: #00A857;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+      }
+    
+      .subtitle-tel {
+        color: #FFF;
+        font-size: 18px;
+        line-height: 1.7;
+        font-weight: 300;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+    
+      .tel-number {
+        font-weight: 400;
+        font-size: 32px;
+        color: #FFF;
+      }
+    
+      .line-tel {
+        border: 0.7px solid #979797;
+        width: 110%;
+        height: 1px;
+        margin: auto -6% 0;
+        margin-bottom: 5%;
+      }
+    
+      .tel-space {
+        padding-top: 5%;
+      }
+    
+      .link-tel {
+        color: #00A857;
+        font-weight: 1000;
+      }
+    
+      .link-tel:hover {
+        text-decoration: underline;
+      }
+    
+      .logo-libras {
+        display: table-cell;
+        width: 42px;
+        height: 43px;
+        background-image: url(/img/pages/nova-home/logo-libras.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+      }
+    
+      .logo-libras:hover {
+        background-image: url(/img/pages/nova-home/hover/logo-libras.svg);
+      }
+    
+      @media screen and (max-width: 767px) {
+    
+        .tel-title-top {
+          margin: 0 auto;
+          text-align: center;
+          font-weight: 700;
+          font-size: 38px;
+          color: #FFF;
+          width: 270px;
+          padding-bottom: 30%;
+          padding-top: 20%;
+        }
+    
+        .grid-template-columns-telefone3 {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 5%;
+          padding: 10px;
+          padding-bottom: 5%;
+        }
+    
+        .grid-template-columns-telefone2 {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 5%;
+          padding: 10px;
+          padding-bottom: 5%;
+        }
+    
+        .green-title-tel {
+          padding-bottom: 10%;
+        }
+    
+        .line-tel {
+          width: 100%;
+          margin: auto 0 0;
+          margin-bottom: 10%;
+          margin-top: 30%;
+        }
+    
+        .br-desk-tel {
+          display: none;
+        }
+    
+        .logo-tel {
+          padding-bottom: 7%;
+        }
+    
+      } </style> <div id="modal-telefone-mobile" class="modal-telefone"> <div class="modal-content-telefone"> <span class="close-telefone-mobile">&times;</span> <div class="tel-title-top"> <img class="logo-tel" src="/img/icons-svg/logo-branco.svg"> <br> Telefones úteis </div> <div class="grid-template-columns-telefone3"> <div class="green-title-tel">Para você e sua <br class="br-desk-tel"> empresa <p class="subtitle-tel">Segunda a Domingo das 8h às 22h<br class="br-desk-tel"> (Inclusive feriados). </p> </div> <div class="tel-number">4004-0800 <p class="subtitle-tel">Capitais e regiões metropolitanas </p> <div class="tel-number tel-space">+55 11 2565-0800</div> <p class="subtitle-tel">Exterior • Ligue a cobrar</p> </div> <div class="tel-number">0300 777 0800 <p class="subtitle-tel">Demais localidades</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">PJ Empresas, Corporate<br class="br-desk-tel"> e Agronegócio <p class="subtitle-tel">Dias úteis, das 8h às 20h. </p> </div> <div class="tel-number">0800 705 3000 <p class="subtitle-tel">Todas as regiões</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">SAC - Informações,<br class="br-desk-tel"> Cancelamentos e<br class="br-desk-tel"> Reclamações <p class="subtitle-tel">Todos os dias, 24h. </p> </div> <div class="tel-number">0800 744 0744 <p class="subtitle-tel">Todas as regiões</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone3"> <div class="green-title-tel">Deficiência auditiva/fala <p class="subtitle-tel">Dias úteis, das 9h às 21h.<br class="br-desk-tel"> Sábado, das 9h às 15h. </p> </div> <div class="tel-number">0800 766 0766 <p class="subtitle-tel">Todas as regiões</p> </div> <div class="tel-number"> <a class="logo-libras" target="_blank" href="https://pslz.in/banco-original"></a> <p style="display: table-cell; padding-left: 12%" class="subtitle-tel">Atendimento <br> em Libras</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">Ouvidoria <p class="subtitle-tel">Dias úteis, das 9h às 18h. </p> </div> <div class="tel-number">0800 755 0755 <p class="subtitle-tel">Todas as regiões</p> <p class="subtitle-tel">A Ouvidoria atua como canal de última instância. Se sua reclamação já foi tratada em nossos canais de atendimento mas você não ficou satisfeito com a solução apresentada, você pode solicitar a reavaliação para a Ouvidoria por telefone ou pelo e-mail ouvidoria@original.com.br mencionando o número do protocolo de atendimento no assunto do e-mail. Para e-mails enviados em finais de semana ou feriados, serão considerados como recebidos no primeiro dia útil subsequente. Caso seja a sua primeira reclamação, entre em contato inicialmente com o SAC pelo telefone 0800 744 0744 (todos os dias, 24 horas por dia).</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">Canal de Ética <p class="subtitle-tel">Atendimento pessoal de segunda à<br class="br-desk-tel"> sábado das 9h às 21h.<br class="br-desk-tel"> Atendimento eletrônico todos os<br class="br-desk-tel"> dias, 24h. </p> </div> <div class="tel-number">0800 377 8029 <p class="subtitle-tel">Todas as regiões</p> <a href="https://canaldeetica.com.br/original"> <p class="subtitle-tel link-tel">canaldeetica.com.br/original</p> </a> <p class="subtitle-tel">ATENÇÃO! Este Canal é <span style="font-weight: 1000">exclusivo</span> para comunicação e reporte de situações com indícios de atos ilícitos relacionadas às atividades desta instituição, sem necessidade de identificação. Para dúvidas e reclamações sobre produtos, informações sobre roubo, perda de senhas e acesso a aplicativos, utilize o Chat Original ou SAC - Informações, Cancelamentos e Reclamações. Casos fora do escopo descrito serão automaticamente cancelados.</p> </div> </div> </div> </div> <script> // Get the modal
+      var modaltelefoneMobile = document.getElementById("modal-telefone-mobile");
+    
+      // Get the button that opens the modal
+      var btntelefoneMobile = document.getElementById("btn-telefone-mobile");
+      var btntelefonehome = document.getElementById("btn-telefone-home");
+    
+      // Get the <span> element that closes the modal
+      var spantelefoneMobile = document.getElementsByClassName("close-telefone-mobile")[0];
+    
+      // Get the <body> class that disable the scroll from main page
+      var disablescroll = document.getElementsByClassName("loading")[0];
+    
+      // When the user clicks the button, open the modal
+      if (btntelefoneMobile) {
+        btntelefoneMobile.onclick = function () {
+          modaltelefoneMobile.style.display = "block";
+          disablescroll.style.overflow = "hidden";
+        }
+      }
+    
+      // When the user clicks the button, open the modal
+      if (btntelefonehome) {
+        btntelefonehome.onclick = function () {
+          modaltelefoneMobile.style.display = "block";
+          disablescroll.style.overflow = "hidden";
+        }
+      }
+    
+      // When the user clicks on <span> (x), close the modal
+      if (spantelefoneMobile) {
+        spantelefoneMobile.onclick = function () {
+          modaltelefoneMobile.style.display = "none";
+          disablescroll.style.overflow = "scroll";
+        }
+      }
+    
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modaltelefoneMobile) {
+          modaltelefoneMobile.style.display = "none";
+        }
+      } </script> <nav class="nav-desktop"> <div class="left"> <a class="logo" href="/" title="Banco Original"> <h1>Banco Original</h1> </a> <div class="nav-item"> <a class="expandable" id="para-voce" rel="nav-subitens">Para você</a> <div class="nav-subitens"> <a href="/"><span>Início</span></a> <a href="/contacorrente"><span>Conta Corrente</span></a> <a href="/cartoes"><span>Cartões</span></a> <a href="/emprestimo"><span>Empréstimo</span></a> <a href="/dinheirodevolta"><span>Dinheiro de Volta</span></a> <a href="/portabilidade"><span>Portabilidade</span></a> <a href="/investimentos"><span>Investimentos</span></a> <a href="/seguros"><span>Seguros</span></a> </div> </div> <div class="nav-item"> <a class="expandable" id="para-sua-empresa" rel="nav-subitens">Para sua empresa</a> <div class="nav-subitens nav-subitens_para-sua-empresa"> <a href="/paravoceesuaempresa"><span>Conta Pessoa Única<br><small>Empresas MEI, EI e SLU</small></span></a> <a href="/empresas"><span>Conta Empresas<br><small>Empresas com mais de um sócio</small></span></a> <a href="/corporate"><span>Conta Corporate<br><small>Empresas com faturamento anual acima de 300MM</small></span></a> <a href="/agronegocio"><span>Conta Agronegócio<br><small>Para produtores rurais</small></span></a> </div> </div> <div class="nav-item"> <a class="expandable" rel="nav-subitens">Sobre o Original</a> <div class="nav-subitens"> <a href="/institucional"><span>Institucional</span></a> <a href="/governanca"><span>Governança</span></a> <a href="/relacoes"><span>Relações com Investidores</span></a> </div> </div> <div class="nav-item"> <a id="btn-telefone-menu">Ajuda</a> </div> </div> <div class="right"> <div id="openfinance" class="nav-item"> <a href="/openfinance"> <h3 class="titleHeader"><span>Open</span>Finance</h3> </a> </div> <div id="pix" class="nav-item"> <a href="/pix"><img src="/img/nav/pix-header.svg" style="vertical-align:middle; margin: 0 12px"></a> </div> <div class="nav-item nav-item-acessar-conta"> <a class="expandable" rel="nav-subitens">Acessar Conta</a> <div class="nav-subitens"> <a href='https://meu.original.com.br/' class="nav-item-acessar-conta-pra-voce"><span>Para você</span></a> <a href='https://meu.original.com.br/' class="nav-item-acessar-conta-pra-voce-e-sua-empresa"><span>Para você e sua empresa</span></a> <a href='https://empresas.original.com.br/login'><span>Empresas</span></a> <a href='https://ibpj.original.com.br/cas/index.jsp' class="nav-item-acessar-conta-corporate"><span>Corporate</span></a> <a href='https://ibpj.original.com.br/cas/index.jsp' class="nav-item-acessar-conta-agronegocio"><span>Agronegócio</span></a> </div> </div> <div class="nav-item nav-item-nova-conta"> <a rel="abrir-nova-conta_desktop">Abrir nova conta</a> <div class="nav-subitens"> <div class="nav-nova-conta nav-nova-conta_1"> <h3 class="fixed-title">ABRIR NOVA CONTA</h3> <div class="nova-conta-item nova-conta-item_para-voce"> <div class="middle"> <h4>Para Você</h4> <p>Sem filas, sem burocracia e 100% digital. Abra sua conta totalmente online.</p> <a id="bt1" class="bt-abrir-conta" href="/abrir-conta">Abrir conta</a> </div> </div> <div class="nova-conta-item nova-conta-item_para-sua-empresa"> <div class="middle"> <h4>Para sua empresa</h4> <p>Individual, com mais de um sócio, Corporate ou Agro. Temos uma conta para cada necessidade e perfil de negócio.</p> <a id="bt2" class="bt-abrir-conta" rel="nav-nova-conta-avancar">Abrir conta</a> </div> </div> </div> <div class="nav-nova-conta nav-nova-conta_2"> <h3 class="fixed-title">Para sua empresa</h3> <div class="nav-nova-conta-voltar"> <span>Voltar</span> </div> <div class="nav-conta nav-conta_pessoa-unica"> <div class="middle"> <h5>Conta Pessoa Única</h5> <p>A solução para empreendedores individuais (MEI, EI e EIRELI) que une as contas PF + PJ em um mesmo app.</p> <a id="bt3" class="bt-abrir-conta" href="/pessoaunica">Abrir conta</a> </div> </div> <div class="nav-conta nav-conta_sociedades"> <div class="middle middle-hei"> <div class="TextoContaEmpresa"> <h5>Conta Empresas</h5> <p>Mais negócios, menos burocracia, em um modelo de conta 100% digital desenhado para empresas com mais de um sócio.</p> <a id="btnContatoForm" class="bt-abrir-conta">FALE CONOSCO</a> </div> </div> </div> <div class="nav-conta nav-conta_corporate"> <div class="middle"> <h5>Conta Corporate</h5> <p>Inovação em serviços financeiros para grandes corporações com faturamento anual acima de 300MM. </p> <a id="bt5" class="bt-abrir-conta" href="/atendimento">Entre em contato</a> </div> </div> <div class="nav-conta nav-conta_agronegocio"> <div class="middle"> <h5>Conta Agronegócio</h5> <p>Para produtores rurais que procuram as melhores soluções em agricultura e pecuária.</p> <a id="bt6" class="bt-abrir-conta" href="/atendimento">Entre em contato</a> </div> </div> </div> </div> </div> <div style="display: none"> <a style="display: none" href="/404"></a> <a style="display: none" href="/500"></a> <a style="display: none" href="/503"></a> <a style="display: none" href="/504"></a> </div> </div> </nav> <div style="display: none !important"> <i class="icon-svg-71"></i> </div> <style> /* The Modal (background) */
+        .modalContatoForm {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 100;
+            /* Sit on top */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow: hidden;
+            /* Enable scroll if needed */
+            background: rgba(0, 0, 0, 0.97);
+        }
+    
+        /* Modal Content */
+        .modal-content {
+            height: 100%;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        /* The Close Button */
+        .closeContatoForm {
+            color: #00a857;
+            position: fixed;
+            top: 20px;
+            right: 28px;
+            font-size: 34px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            align-self: flex-end;
+            z-index: 1;
+            cursor: pointer;
+        } </style> <div id="modalContatoForm" class="modalContatoForm"> <span class="closeContatoForm">&times;</span> <iframe style="height:100vh; width:100vw"></iframe> </div> <script> if (document.location.pathname != "/contatoform") {
+    
+            document.querySelector("#modalContatoForm iframe").src = "/contatoform";
+    
+            window.addEventListener("message", function(response) {
+                if (typeof response == 'object' && !!response.data) {
+                    if (response.data.hasOwnProperty("event") && response.data.event == 'gaevent') {
+                        dataLayer.push(response.data);
+                    }
+                }
+            });
+    
+            /*document.querySelector('#modalContatoForm iframe').addEventListener("load", function(e) {
+                document.querySelector('#modalContatoForm iframe').contentWindow.postMessage(document.location.href, '*');
+            });*/
+    
+          }
+    
+        // Get the modal
+        var modalContatoForm = document.getElementById("modalContatoForm");
+    
+        // Get the button that opens the modal
+        var btnContatoForm = document.getElementById("btnContatoForm");
+    
+        // Get the <span> element that closes the modal
+        var spanContatoForm = document.getElementsByClassName("closeContatoForm")[0];
+    
+        // When the user clicks the button, open the modal
+        btnContatoForm.onclick = function () {
+            modalContatoForm.style.display = "block";
+        }
+    
+        // When the user clicks on <span> (x), close the modal
+        spanContatoForm.onclick = function () {
+            modalContatoForm.style.display = "none";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modalContatoForm) {
+                modalContatoForm.style.display = "none";
+            }
+        } </script> <style> /* The Modal (background) */
+        .modal-telefone {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 100;
+            /* Sit on top */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            overflow-y: scroll;
+            overflow-x: hidden !important;
+            /* Enable scroll if needed */
+            background: #1A1B1A;
+        }
+    
+        .bg-telefone {
+            background: url(/img/covers/homepf/bg-telefone-dsk.jpg) no-repeat center top;
+            background-size: cover;
+        }
+    
+    
+        /* Modal Content */
+        .modal-content-telefone {
+            height: 2578px;
+            width: 100%;
+            max-width: 1400px;
+            padding: 10% 10%;
+            margin: 0 auto;
+        }
+    
+        /* The Close Button */
+        .close-telefone-menu {
+            color: #00a857;
+            position: fixed;
+            top: 20px;
+            right: 28px;
+            font-size: 34px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            align-self: flex-end;
+            z-index: 1;
+            cursor: pointer;
+        }
+    
+        .tel-title-top {
+            margin: 0 auto;
+            text-align: center;
+            font-weight: 700;
+            font-size: 68px;
+            color: #FFF;
+            width: 857px;
+            padding-bottom: 170px;
+        }
+    
+        .grid-template-columns-telefone3 {
+            display: grid;
+            grid-template-columns: 386px 316px auto;
+            grid-gap: 5%;
+            padding: 10px;
+            padding-bottom: 5%;
+        }
+    
+        .grid-template-columns-telefone2 {
+            display: grid;
+            grid-template-columns: 386px auto;
+            grid-gap: 5%;
+            padding: 10px;
+            padding-bottom: 5%;
+        }
+    
+        .green-title-tel {
+            color: #00A857;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.2;
+        }
+    
+        .subtitle-tel {
+            color: #FFF;
+            font-size: 18px;
+            line-height: 1.7;
+            font-weight: 300;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    
+        .tel-number {
+            font-weight: 400;
+            font-size: 32px;
+            color: #FFF;
+        }
+    
+        .line-tel {
+            border: 0.7px solid #979797;
+            width: 110%;
+            height: 1px;
+            margin: auto -6% 0;
+            margin-bottom: 5%;
+        }
+    
+        .tel-space {
+            padding-top: 5%;
+        }
+    
+        .link-tel {
+            color: #00A857;
+            font-weight: 1000;
+        }
+    
+        .link-tel:hover {
+            text-decoration: underline;
+        }
+    
+        .logo-libras {
+            display: table-cell;
+            width: 42px;
+            height: 43px;
+            background-image: url(/img/pages/nova-home/logo-libras.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+    
+        .logo-libras:hover {
+            background-image: url(/img/pages/nova-home/hover/logo-libras.svg);
+        }
+    
+        @media screen and (max-width: 767px) {
+    
+            .tel-title-top {
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 700;
+                font-size: 38px;
+                color: #FFF;
+                width: 270px;
+                padding-bottom: 30%;
+                padding-top: 20%;
+            }
+    
+            .grid-template-columns-telefone3 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 5%;
+                padding: 10px;
+                padding-bottom: 5%;
+            }
+    
+            .grid-template-columns-telefone2 {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 5%;
+                padding: 10px;
+                padding-bottom: 5%;
+            }
+    
+            .green-title-tel {
+                padding-bottom: 10%;
+            }
+    
+            .line-tel {
+                width: 100%;
+                margin: auto 0 0;
+                margin-bottom: 10%;
+                margin-top: 30%;
+            }
+    
+            .br-desk-tel {
+                display: none;
+            }
+    
+            .logo-tel {
+                padding-bottom: 7%;
+            }
+    
+        } </style> <div id="modal-telefone-menu" class="modal-telefone"> <div class="modal-content-telefone"> <span class="close-telefone-menu">&times;</span> <div class="tel-title-top"> <img class="logo-tel" src="/img/icons-svg/logo-branco.svg"> <br> Telefones úteis </div> <div class="grid-template-columns-telefone3"> <div class="green-title-tel">Para você e sua <br class="br-desk-tel"> empresa <p class="subtitle-tel">Segunda a Domingo das 8h às 22h<br class="br-desk-tel"> (Inclusive feriados). </p> </div> <div class="tel-number">4004-0800 <p class="subtitle-tel">Capitais e regiões metropolitanas </p> <div class="tel-number tel-space">+55 11 2565-0800</div> <p class="subtitle-tel">Exterior • Ligue a cobrar</p> </div> <div class="tel-number">0300 777 0800 <p class="subtitle-tel">Demais localidades</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">PJ Empresas, Corporate<br class="br-desk-tel"> e Agronegócio <p class="subtitle-tel">Dias úteis, das 8h às 20h. </p> </div> <div class="tel-number">0800 705 3000 <p class="subtitle-tel">Todas as regiões</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">SAC - Informações,<br class="br-desk-tel"> Cancelamentos e<br class="br-desk-tel"> Reclamações <p class="subtitle-tel">Todos os dias, 24h. </p> </div> <div class="tel-number">0800 744 0744 <p class="subtitle-tel">Todas as regiões</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone3"> <div class="green-title-tel">Deficiência auditiva/fala <p class="subtitle-tel">Dias úteis, das 9h às 21h.<br class="br-desk-tel"> Sábado, das 9h às 15h. </p> </div> <div class="tel-number">0800 766 0766 <p class="subtitle-tel">Todas as regiões</p> </div> <div class="tel-number"> <a class="logo-libras" target="_blank" href="https://pslz.in/banco-original"></a> <p style="display: table-cell; padding-left: 12%" class="subtitle-tel">Atendimento <br> em Libras</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">Ouvidoria <p class="subtitle-tel">Dias úteis, das 9h às 18h. </p> </div> <div class="tel-number">0800 755 0755 <p class="subtitle-tel">Todas as regiões</p> <p class="subtitle-tel">A Ouvidoria atua como canal de última instância. Se sua reclamação já foi tratada em nossos canais de atendimento mas você não ficou satisfeito com a solução apresentada, você pode solicitar a reavaliação para a Ouvidoria por telefone ou pelo e-mail ouvidoria@original.com.br mencionando o número do protocolo de atendimento no assunto do e-mail. Para e-mails enviados em finais de semana ou feriados, serão considerados como recebidos no primeiro dia útil subsequente. Caso seja a sua primeira reclamação, entre em contato inicialmente com o SAC pelo telefone 0800 744 0744 (todos os dias, 24 horas por dia).</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">Canal de Ética <p class="subtitle-tel">Atendimento pessoal de segunda à<br class="br-desk-tel"> sábado das 9h às 21h.<br class="br-desk-tel"> Atendimento eletrônico todos os<br class="br-desk-tel"> dias, 24h. </p> </div> <div class="tel-number">0800 377 8029 <p class="subtitle-tel">Todas as regiões</p> <a href="https://canaldeetica.com.br/original"> <p class="subtitle-tel link-tel">canaldeetica.com.br/original</p> </a> <p class="subtitle-tel">ATENÇÃO! Este Canal é <span style="font-weight: 1000">exclusivo</span> para comunicação e reporte de situações com indícios de atos ilícitos relacionadas às atividades desta instituição, sem necessidade de identificação. Para dúvidas e reclamações sobre produtos, informações sobre roubo, perda de senhas e acesso a aplicativos, utilize o Chat Original ou SAC - Informações, Cancelamentos e Reclamações. Casos fora do escopo descrito serão automaticamente cancelados.</p> </div> </div> </div> </div> <script> // Get the modal
+        var modaltelefoneMenu = document.getElementById("modal-telefone-menu");
+    
+        // Get the button that opens the modal
+        var btntelefoneMenu = document.getElementById("btn-telefone-menu");
+        //var btntelefonehome = document.getElementById("btn-telefone-home");
+    
+        // Get the <span> element that closes the modal
+        var spantelefoneMenu = document.getElementsByClassName("close-telefone-menu")[0];
+    
+        // Get the <body> class that disable the scroll from main page
+        var disablescroll = document.getElementsByClassName("loading")[0];
+    
+        // When the user clicks the button, open the modal
+        btntelefoneMenu.onclick = function () {
+            modaltelefoneMenu.style.display = "block";
+            disablescroll.style.overflow = "hidden";
+        }
+    
+        // When the user clicks the button, open the modal
+        //btntelefonehome.onclick = function () {
+        //  modaltelefoneMenu.style.display = "block";
+        //  disablescroll.style.overflow = "hidden";
+        //}
+    
+        // When the user clicks on <span> (x), close the modal
+        spantelefoneMenu.onclick = function () {
+            modaltelefoneMenu.style.display = "none";
+            disablescroll.style.overflow = "scroll";
+        }
+    
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modaltelefoneMenu) {
+                modaltelefoneMenu.style.display = "none";
+            }
+        } </script> </div> <div class="viewport-secondary"> <nav class="menu-scroll"> <ul class="nav-bullets"> <li class="active-menu-scroll dot-welcome"> <a href="#section-1"> <span class="dot"></span> <span class="label"> <span class="string">Bem-Vindo</span> <span class="ball"><i class="icon-svg-28"></i></span> </span> </a> </li> <li class="dot-inovator"> <a href="#section-2"> <span class="dot"></span> <span class="label"> <span class="string">Inovador</span> <span class="ball"><i class="icon-svg-35"></i></span> </span> </a> </li> <li class="dot-next"> <a href="#section-3"> <span class="dot"></span> <span class="label"> <span class="string">Próximo</span> <span class="ball"><i class="icon-svg-50"></i></span> </span> </a> </li> <li class="dot-simple"> <a href="#section-4"> <span class="dot"></span> <span class="label"> <span class="string">Simples</span> <span class="ball"><i class="icon-svg-60"></i></span> </span> </a> </li> <li class="dot-reliable"> <a href="#section-5"> <span class="dot"></span> <span class="label"> <span class="string">Confiável</span> <span class="ball"><i class="icon-svg-51"></i></span> </span> </a> </li> <li class="dot-transparent"> <a href="#section-6"> <span class="dot"></span> <span class="label"> <span class="string">Transparente</span> <span class="ball"><i class="icon-svg-53"></i></span> </span> </a> </li> </ul> </nav> <script> var url_page = window.location.href;
+  
+  dataLayer.push({'event' : 'pagetrack' , 'PNPagina' : 'Erro-404' , 'segmento' : 'Institucional'  , 'URL' : url_page }); </script> <main role="main" class="page-error error-404"> <section id="section-1" class="page-section"> <div class="wrap-content"> <header> <h2 class="title">Página não encontrada [ERRO 404]</h2> <h2 class="subtitle">A página que você procura não existe ou está<br> fora do ar. Verifique a URL digitada e tente novamente.</h2> </header> <div class="cta"> <a class="btn" href="/">Ir para Home</a> </div> </div> </section> <section id="section-2" class="page-section frame-links cover vh100"> <div class="cover-container b-lazy vh100" data-src="/img/covers/erros/404/cover-2.jpg" mobile="/img/covers/erros/404/320/cover-2.jpg" tablet="/img/covers/erros/404/767/cover-2.jpg"> </div> <div class="wrap-content"> <div class="content right"> <header> <h2 class="title">Um Banco 100% digital.<br> Sem filas e<br> sem burocracia.</h2> <h2 class="subtitle">O Banco Original chegou para descomplicar a sua relação com o dinheiro. Aqui é tudo simples e do seu jeito.</h2> </header> <ul class="list-icons"> <li><i class="icon-svg-1"></i> Abra sua conta online, pelo celular</li> <li><i class="icon-svg-26"></i> Investimentos a partir de R$1 mil</li> <li><i class="icon-svg-70"></i> Programa de Pontos que não depende do dólar</li> </ul> <ul class="list-links"> <li><a href="/investimentos"><i class="icon-svg-69"></i> Investimentos</a></li> <li><a href="/cartoes/programadepontos"><i class="icon-svg-69"></i> Programa de Pontos</a></li> <li><a href="/documentosimportantes"><i class="icon-svg-69"></i> Tarifas</a></li> <li><a href="/sobreobanco"><i class="icon-svg-69"></i> Sobre o Banco</a></li> </ul> </div> </div> </section> <section id="section-3" class="page-section frame-faq"> <div class="wrap-content"> <header> <h2 class="title">Perguntas Frequentes</h2> <h2 class="subtitle">Está com uma dúvida? Acesse abaixo nossa página de perguntas frequentes.</h2> </header> <ul class="articles"> <li class="item-question"> <h3 class="question">Onde está a senha para acessar a minha conta?</h3> <div class="reply"> <p>A senha provisória para acessar sua conta foi enviada para seu e-mail de cadastro. Siga os passos abaixo para localizá-la:</p> <p>1. Localize o e-mail recebido do remetente Banco Original. Nesse e-mail há um arquivo PDF anexado, que será aberto através de uma senha que está em um SMS enviado.</p> <p>2. Localize o SMS recebido em seu telefone celular também cadastrado conosco, nele há uma senha para abrir o PDF.</p> <p>3. Ao digitar esta senha no PDF, você irá localizar a senha provisória.</p> <p>4. Agora, basta acessar nosso sistema no celular ou através do Internet Banking e seguir os passos para criação de sua senha definitiva.</p> </div> </li> <li class="item-question"> <h3 class="question">Quais são as tarifas cobradas pelo Banco Original?</h3> <div class="reply"> <p>No Banco Original você conta com 90 dias de isenção total nas principais tarifas. Assim você pode experimentar todos os benefícios do banco Original sem se preocupar com quanto vai gastar.</p> <p>Além disso, após este período, você conta com a franquia gratuita Original. Ou seja, aqui você não paga taxa de manutenção mensal de conta corrente. A franquia gratuita Original te dá uma série de serviços grátis: Saques ilimitados nos ATM do Banco Original, transferências ilimitadas entre contas do Banco Original, consulta de saldos e extratos ilimitados em todos os canais disponíveis, 2 TEDs (o excedente custa apenas R$6,90 por transação), 5 saques nos terminais do Banco 24 horas (o excedente custa apenas R$1,70 por saque) e 10 folhas de cheque. Assim você só paga pelo que realmente utilizar ao final da sua franquia sem ficar preso a um pacote de tarifas com serviços que você não utiliza.</p> <p> Para mais informações sobre a franquia gratuita Original:<br> <a target="_blank" href="/docs/important-documents/Banco Original_Tabela_Tarifas_PF_Combinadas_Atualizada.pdf">https://www.original.com.br/documentos</a> </p> </div> </li> </ul> <div class="cta"> <a class="btn" href="/perguntasfrequentes">Ver todas as perguntas <i class="icon-svg-71"></i></a> </div> </div> </section> </main> <footer id="footer"> <section class="footer-01"> <div class="footer-trabalhe"> <a class="link-trabalhe" href="https://somosoriginal.gupy.io/">Trabalhe conosco <br>e faça parte do <br>banco digital mais inovador <br>do Brasil </a> </div> <div class="footer-links-01"> <ul> <li> <a class="link-footer-item" href="/documentosimportantes">Documentos importantes</a> </li> <li> <a class="link-footer-item" href="/boletooriginal">Emitir 2ª via do boleto</a> </li> <li> <a class="link-footer-item" href="/correspondentebancario">Correspondente Bancário</a> </li> <li> <a class="link-footer-item" href="/agenteoriginal">Agente Original</a> </li> <li> <a class="link-footer-item" target="_blank" href="/documentosimportantes">Tarifas</a> </li> </ul> </div> <div class="footer-links-02"> <ul> <li> <a class="link-footer-item" href="/seguranca">Segurança</a> </li> <li> <a class="link-footer-item" href="/docs/important-documents/PoliticaPrivacidade.pdf">Política de Privacidade</a> </li> <li> <a class="link-footer-item" href="/governanca/#section-6">Autoregulação Febraban</a> </li> <li> <a class="link-footer-item" href="/imprensa">Imprensa</a> </li> <li> <a class="link-footer-item" id="btn-telefone-footer">Telefones úteis</a> </li> </ul> </div> <div class="footer-apps"> <ul class="app-logos"> <li> <a class="logo-android eventoAndroidDownloadFooter" target="_blank" href="https://play.google.com/store/apps/details?id=br.com.original.bank"></a> </li> <li> <a class="logo-apple eventoAppleDownloadFooter" target="_blank" href="https://apps.apple.com/br/app/banco-original/id980234079"></a> </li> </ul> <p>Baixe agora mesmo o <br>app e abra sua conta : )</p> </div> </section> <section class="footer-02"> <div class="footer-copyright"> <div class="copyright-01"> <a href="/" class="up"><i class="icon-svg-28"></i></a> <p>© 2022 Banco Original S.A. CNPJ 92.894.922/0001-08</p> </div> <div class="copyright-02"> <p>Avenida Brigadeiro Faria Lima, nº 2113, Jardim Paulistano, São Paulo, SP - CEP 01452-001</p> </div> </div> <div class="footer-social"> <ul style="z-index: 2" class="logos-social"> <li> <a target="_blank" class="logo-social" href="https://www.facebook.com/BancoOriginal/" title="Facebook"></a> </li> <li> <a target="_blank" class="logo-social" href="https://www.instagram.com/bancooriginal/" title="Instagram"></a> </li> <li> <a target="_blank" class="logo-social" href="https://www.youtube.com/user/BancoOriginal" title="YouTube"></a> </li> </ul> <ul class="logos-social row2"> <li> <a target="_blank" class="logo-social" href="https://twitter.com/bancooriginal" title="Twitter"></a> </li> <li> <a target="_blank" class="logo-social" href="https://www.linkedin.com/company/banco-original" title="Linkedin"></a> </li> </ul> </div> <div class="footer-atend"> <ul class="atend-logos"> <li> <a class="logo-whats" target="_blank" id="myBtn"></a> </li> <li> <a class="logo-libras" target="_blank" href="https://pslz.in/banco-original"></a> </li> </ul> <p>Atendimento <br> WhatsApp </p> <p>Atendimento <br> em Libras </p> </div> <div class="footer-whatsappMOB"> <div style="padding-bottom: 10%"> <a href="https://wa.me/message/HGIFOZHJTMBBA1" target="_blank" class="logo-whats" title="WhatsApp"></a> <p>Atendimento <br> WhatsApp </p> </div> <br> <a href="https://pslz.in/banco-original" target="_blank" class="logo-libras"></a> <p>Atendimento <br> em Libras </p> </div> </section> </footer> <style> /* The Modal (background) */
+      .modal-telefone {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 100;
+        /* Sit on top */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        overflow-y: scroll;
+        overflow-x: hidden !important;
+        /* Enable scroll if needed */
+        background: #1A1B1A;
+      }
+    
+      .bg-telefone {
+        background: url(/img/covers/homepf/bg-telefone-dsk.jpg) no-repeat center top;
+        background-size: cover;
+      }
+    
+      /* Modal Content */
+      .modal-content-telefone {
+        height: 2578px;
+        width: 100%;
+        max-width: 1400px;
+        padding: 10% 10%;
+        margin: 0 auto;
+      }
+    
+      /* The Close Button */
+      .close-telefone-footer {
+        color: #00a857;
+        position: fixed;
+        top: 20px;
+        right: 28px;
+        font-size: 34px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        align-self: flex-end;
+        z-index: 1;
+        cursor: pointer;
+      }
+    
+      .tel-title-top {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        font-size: 68px;
+        color: #FFF;
+        width: 857px;
+        padding-bottom: 170px;
+      }
+    
+      .grid-template-columns-telefone3 {
+        display: grid;
+        grid-template-columns: 386px 316px auto;
+        grid-gap: 5%;
+        padding: 10px;
+        padding-bottom: 5%;
+      }
+    
+      .grid-template-columns-telefone2 {
+        display: grid;
+        grid-template-columns: 386px auto;
+        grid-gap: 5%;
+        padding: 10px;
+        padding-bottom: 5%;
+      }
+    
+      .green-title-tel {
+        color: #00A857;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+      }
+    
+      .subtitle-tel {
+        color: #FFF;
+        font-size: 18px;
+        line-height: 1.7;
+        font-weight: 300;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+    
+      .tel-number {
+        font-weight: 400;
+        font-size: 32px;
+        color: #FFF;
+      }
+    
+      .line-tel {
+        border: 0.7px solid #979797;
+        width: 110%;
+        height: 1px;
+        margin: auto -6% 0;
+        margin-bottom: 5%;
+      }
+    
+      .tel-space {
+        padding-top: 5%;
+      }
+    
+      .link-tel {
+        color: #00A857;
+        font-weight: 1000;
+      }
+    
+      .link-tel:hover {
+        text-decoration: underline;
+      }
+    
+      .logo-libras {
+        display: table-cell;
+        width: 42px;
+        height: 43px;
+        background-image: url(/img/pages/nova-home/logo-libras.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+      }
+    
+      .logo-libras:hover {
+        background-image: url(/img/pages/nova-home/hover/logo-libras.svg);
+      }
+    
+      @media screen and (max-width: 767px) {
+        .tel-title-top {
+          margin: 0 auto;
+          text-align: center;
+          font-weight: 700;
+          font-size: 38px;
+          color: #FFF;
+          width: 270px;
+          padding-bottom: 30%;
+          padding-top: 20%;
+        }
+    
+        .grid-template-columns-telefone3 {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 5%;
+          padding: 10px;
+          padding-bottom: 5%;
+        }
+    
+        .grid-template-columns-telefone2 {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: 5%;
+          padding: 10px;
+          padding-bottom: 5%;
+        }
+    
+        .green-title-tel {
+          padding-bottom: 10%;
+        }
+    
+        .line-tel {
+          width: 100%;
+          margin: auto 0 0;
+          margin-bottom: 10%;
+          margin-top: 30%;
+        }
+    
+        .br-desk-tel {
+          display: none;
+        }
+    
+        .logo-tel {
+          padding-bottom: 7%;
+        }
+      } </style> <div id="modal-telefone-footer" class="modal-telefone"> <div class="modal-content-telefone"> <span class="close-telefone-footer">&times;</span> <div class="tel-title-top"> <img class="logo-tel" src="/img/icons-svg/logo-branco.svg"> <br> Telefones úteis </div> <div class="grid-template-columns-telefone3"> <div class="green-title-tel">Para você e sua <br class="br-desk-tel"> empresa <p class="subtitle-tel">Segunda a Domingo das 8h às 22h<br class="br-desk-tel"> (Inclusive feriados). </p> </div> <div class="tel-number">4004-0800 <p class="subtitle-tel">Capitais e regiões metropolitanas </p> <div class="tel-number tel-space">+55 11 2565-0800</div> <p class="subtitle-tel">Exterior • Ligue a cobrar</p> </div> <div class="tel-number">0300 777 0800 <p class="subtitle-tel">Demais localidades</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">PJ Empresas, Corporate<br class="br-desk-tel"> e Agronegócio <p class="subtitle-tel">Dias úteis, das 8h às 20h. </p> </div> <div class="tel-number">0800 705 3000 <p class="subtitle-tel">Todas as regiões</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">SAC - Informações,<br class="br-desk-tel"> Cancelamentos e<br class="br-desk-tel"> Reclamações <p class="subtitle-tel">Todos os dias, 24h. </p> </div> <div class="tel-number">0800 744 0744 <p class="subtitle-tel">Todas as regiões</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone3"> <div class="green-title-tel">Deficiência auditiva/fala <p class="subtitle-tel">Dias úteis, das 9h às 21h.<br class="br-desk-tel"> Sábado, das 9h às 15h. </p> </div> <div class="tel-number">0800 766 0766 <p class="subtitle-tel">Todas as regiões</p> </div> <div class="tel-number"> <a class="logo-libras" target="_blank" href="https://pslz.in/banco-original"></a> <p style="display: table-cell; padding-left: 12%" class="subtitle-tel">Atendimento <br> em Libras</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">Ouvidoria <p class="subtitle-tel">Dias úteis, das 9h às 18h. </p> </div> <div class="tel-number">0800 755 0755 <p class="subtitle-tel">Todas as regiões</p> <p class="subtitle-tel">A Ouvidoria atua como canal de última instância. Se sua reclamação já foi tratada em nossos canais de atendimento mas você não ficou satisfeito com a solução apresentada, você pode solicitar a reavaliação para a Ouvidoria por telefone ou pelo e-mail ouvidoria@original.com.br mencionando o número do protocolo de atendimento no assunto do e-mail. Para e-mails enviados em finais de semana ou feriados, serão considerados como recebidos no primeiro dia útil subsequente. Caso seja a sua primeira reclamação, entre em contato inicialmente com o SAC pelo telefone 0800 744 0744 (todos os dias, 24 horas por dia).</p> </div> </div> <div class="line-tel"></div> <div class="grid-template-columns-telefone2"> <div class="green-title-tel">Canal de Ética <p class="subtitle-tel">Atendimento pessoal de segunda à<br class="br-desk-tel"> sábado das 9h às 21h.<br class="br-desk-tel"> Atendimento eletrônico todos os<br class="br-desk-tel"> dias, 24h. </p> </div> <div class="tel-number">0800 377 8029 <p class="subtitle-tel">Todas as regiões</p> <a href="https://canaldeetica.com.br/original"> <p class="subtitle-tel link-tel">canaldeetica.com.br/original</p> </a> <p class="subtitle-tel">ATENÇÃO! Este Canal é <span style="font-weight: 1000">exclusivo</span> para comunicação e reporte de situações com indícios de atos ilícitos relacionadas às atividades desta instituição, sem necessidade de identificação. Para dúvidas e reclamações sobre produtos, informações sobre roubo, perda de senhas e acesso a aplicativos, utilize o Chat Original ou SAC - Informações, Cancelamentos e Reclamações. Casos fora do escopo descrito serão automaticamente cancelados.</p> </div> </div> </div> </div> <script> // Get the modal
+      var modaltelefoneFooter = document.getElementById("modal-telefone-footer");
+    
+      // Get the button that opens the modal
+      var btntelefoneFooter = document.getElementById("btn-telefone-footer");
+      var btntelefoneFooterhome = document.getElementById("btn-telefone-home");
+    
+      // Get the <span> element that closes the modal
+      var spantelefoneFooter = document.getElementsByClassName("close-telefone-footer")[0];
+    
+      // Get the <body> class that disable the scroll from main page
+      var disablescroll = document.getElementsByClassName("loading")[0];
+    
+      // When the user clicks the button, open the modal
+      if (btntelefoneFooter) {
+        btntelefoneFooter.onclick = function () {
+          modaltelefoneFooter.style.display = "block";
+          disablescroll.style.overflow = "hidden";
+        }
+      }
+    
+      // When the user clicks the button, open the modal
+      if (btntelefoneFooterhome) {
+        btntelefoneFooterhome.onclick = function () {
+          modaltelefoneFooter.style.display = "block";
+          disablescroll.style.overflow = "hidden";
+        }
+      }
+    
+      // When the user clicks on <span> (x), close the modal
+      if (spantelefoneFooter) {
+        spantelefoneFooter.onclick = function () {
+          modaltelefoneFooter.style.display = "none";
+          disablescroll.style.overflow = "scroll";
+        }
+      }
+    
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modaltelefoneFooter) {
+          modaltelefoneFooter.style.display = "none";
+        }
+      } </script> </div> <div id="myBtn" class="messenger-bot"></div> <a class="messenger-botMB" href="https://wa.me/message/HGIFOZHJTMBBA1"></a> <style> /* The Modal (background) */
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 100;
+      /* Sit on top */
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
+      /* Enable scroll if needed */
+      background: rgba(0, 0, 0, 0.97);
+    }
+   
+    /* Modal Content */
+    .modal-content {
+      height: 100%;
+      padding: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   
+    /* The Close Button */
+    .close {
+      color: #00a857;
+      position: fixed;
+      top: 20px;
+      right: 28px;
+      font-size: 34px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      align-self: flex-end;
+      z-index: 1;
+      cursor: pointer;
+    }
+  
+    .titleMessenger{
+      width: 422px;
+      height: 222px;
+      font-size: 42px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-bottom: 30px;
+      margin-right: 100px;
+    }
+   
+    .mlcf-QrCode {
+      width: 260px;
+      height: 260px;
+      cursor: pointer;
+      display: contents;
+    }
+   
+    .strong {
+    color: #00a857;
+    } </style> <div id="myModal" class="modal"> <div class="modal-content"> <span class="close">&times;</span> <p class="titleMessenger">Aponte seu celular <br>para o QR Code e fale <br>com o <strong>Banco Original</strong> <br>pelo WhatsApp.</p> <a class="mlcf-QrCode" href="https://wa.me/message/HGIFOZHJTMBBA1" target="_blank"> <img class="qrcode" style="width: 260px;height: 260px; cursor:pointer" src="/img/nav/qrcode-whatsapp.png"></a> </div> </div> <script> // Get the modal
+    var modal = document.getElementById("myModal");
+   
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+   
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+   
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+   
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+   
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    } </script> <div id="outdated"> <h6>O seu navegador est&aacute; desatualizado!</h6> <p>Atualize o seu navegador para ter uma melhor experi&ecirc;ncia e visualiza&ccedil;&atilde;o deste site. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/pt-br">Atualize o seu navegador agora</a></p> <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Fechar">&times;</a></p> </div> <script type='text/javascript' src="/js/outdatedbrowser/outdatedbrowser.min.js"></script> <script> function addLoadEvent(func) {
+      var oldonload = window.onload;
+
+      if (typeof window.onload != 'function') {
+        window.onload = func;
+      } else {
+        window.onload = function () {
+          if (oldonload) {
+            oldonload();
+          }
+          func();
+        }
+      }
+    }
+    addLoadEvent(function () {
+      outdatedBrowser({
+        bgColor: '#18AD47',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: ''
+      });
+
+      $("#outdated").addClass("show-outdated-browser");
+    }); </script> <script> var browserIE = /*@cc_on!@*/false || !!document.documentMode;
+    var dispatchFontLoadEvent = false;
+    var webfontsAvailable = false;
+
+    /*----------  WebfontLoad  ----------*/
+
+    WebFontConfig = {
+      typekit: { id: 'iuu4ctl' },
+      active: webFontActive,
+      loading: function () { },
+      inactive: webFontActive,
+      fontloading: function (familyName, fvd) { },
+      fontactive: function (familyName, fvd) { },
+      fontinactive: function (familyName, fvd) { }
+    };
+
+    (function (d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+      s.parentNode.insertBefore(wf, s);
+    })(document);
+
+    window.isWebFontAvailable = function () {
+      return webfontsAvailable;
+    }
+
+    window.enableFontLoadedDispatcher = function () {
+      dispatchFontLoadEvent = true;
+    }
+
+    function webFontActive() {
+      webfontsAvailable = true;
+
+      if (dispatchFontLoadEvent) {
+        triggerEventLoadComplete();
+      }
+    }
+
+    function triggerEventLoadComplete() {
+      $(window).trigger("fontLoaded");
+    } </script> <script type='text/javascript' defer src='/js/vendors.js?v=1.298.0.0'></script> <script type='text/javascript' defer src='/js/app.js?v=1.298.0.0'></script> <script type='text/javascript' defer src='/js/common.js?v=1.298.0.0'></script> <script> var i = new Image;
+    u = "https://s3-sa-east-1.amazonaws.com/frame-image-br/bg.png?x-id=ori&x-r=" + document.referrer;
+    i.src = u; </script> <script type='text/javascript' defer src='/js/errors/errors.js?v=1.298.0.0'></script> <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="42b96c39-1f19-43f2-8fca-029c8f34fba2"></script> <script type="text/javascript"> function OptanonWrapper() { } </script> <noscript><img src="https://www.original.com.br/akam/13/pixel_1ec0e2f8?a=dD1iZTZlZWFmZWVkZjJkMDVjNTAxOTQ2ZGFjMmE4ODY2YTkzZDM3NDA2JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript></body> </html> 

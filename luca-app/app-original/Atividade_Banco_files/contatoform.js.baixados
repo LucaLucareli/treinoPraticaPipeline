@@ -1,0 +1,522 @@
+APP.contatoform = function ($el) {
+  var that = APP.baseClass($el);
+  that.init = function () {
+    that.setPageView("/contatoform", "Banco Original | contatoform");
+    that.loadComponents();
+  }
+}
+
+var dataUrl = {
+  getReferrerUrl: function () {
+    var url_referrer = (window.location != window.parent.location) ? document.referrer : document.location.href;
+    return url_referrer;
+  },
+  getReferrerPage: function () {
+    var url_referrer = (window.location != window.parent.location) ? document.referrer : document.location.href;
+    var current_page = url_referrer.replace(/(http|https):\/\//, '');
+    current_page = current_page.split('/');
+    current_page = (current_page[1]) ? current_page[1] : url_referrer;
+    return current_page;
+  }
+};
+  
+$(document).ready(function () {
+
+  var url_page = window.location.href;
+
+  window.onmessage = function(e) {
+    if (e.data) {
+    }
+  };
+
+  //initModalPix();
+
+  /* TAGUEAMENTO SCROLLS */
+  if (document.querySelector('#section-01')) {
+    const target = document.querySelector('#section-01');
+    const options = {
+      threshold: 0.1,
+      }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#section-02')) {
+    const target = document.querySelector('#section-02');
+    const options = {
+      threshold: 0.1,
+    }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#section-03')) {
+    const target = document.querySelector('#section-03');
+    const options = {
+      threshold: 0.1,
+    }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#section-04')) {
+    const target = document.querySelector('#section-04');
+    const options = {
+      threshold: 0.1,
+    }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#section-05')) {
+    const target = document.querySelector('#section-05');
+    const options = {
+      threshold: 0.1,
+    }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#section-06')) {
+    const target = document.querySelector('#section-06');
+    const options = {
+      threshold: 0.1,
+    }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#section-07')) {
+    const target = document.querySelector('#section-07');
+    const options = {
+      threshold: 0.1,
+      }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+      }
+      const observer = new IntersectionObserver(handleIntersection, options);
+      observer.observe(target);
+  }
+
+  if (document.querySelector('#section-08')) {
+    const target = document.querySelector('#section-08');
+    const options = {
+      threshold: 0.1,
+      }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#section-09')) {
+    const target = document.querySelector('#section-09');
+    const options = {
+      threshold: 0.1,
+      }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  if (document.querySelector('#footer')) {
+    const target = document.querySelector('#footer');
+    const options = {
+      threshold: 0.1,
+      }
+    function handleIntersection(entries) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          window.parent.postMessage({'event' : 'pagetrack' , 'PNPagina' : dataUrl.getReferrerPage() , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+          observer.unobserve(target);
+        }
+      });
+    }
+    const observer = new IntersectionObserver(handleIntersection, options);
+    observer.observe(target);
+  }
+
+  //// TAGUEAMENTO EVENTOS
+
+  ////CAMPOS FORM
+  $('#nome').on("change", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ' , 'eventoAcao' : 'campos-preenchidos' , 'eventoRotulo' : 'Nome' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+   });
+
+  $('#telefone').on("change", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ' , 'eventoAcao' : 'campos-preenchidos' , 'eventoRotulo' : 'Telefone' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+  });
+
+  $('#email').on("change", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ' , 'eventoAcao' : 'campos-preenchidos' , 'eventoRotulo' : 'Email' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+  });
+
+  $('#cpf').on("change", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ' , 'eventoAcao' : 'campos-preenchidos' , 'eventoRotulo' : 'CPF' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+  });
+
+  $('#cnpj').on("change", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ' , 'eventoAcao' : 'campos-preenchidos' , 'eventoRotulo' : 'CNPJ' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl() });
+  });
+
+  $('#btnEnviar').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ' , 'eventoAcao' : 'campos-preenchidos' , 'eventoRotulo' : 'QueroSerCliente' , 'segmento' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  //BOTÕES 
+  $('.dbotao-abrirconta').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_BotaoAbrirContaDSK' , 'eventoAcao' : 'Interacoes' , 'eventoRotulo' : 'Abra-sua-Conta' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('.mbotao-abrirconta').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_BotaoAbrirContaMB' , 'eventoAcao' : 'Interacoes' , 'eventoRotulo' : 'Abra-sua-Conta' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('.messenger-bot').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_BotaoWhatsapp' , 'eventoAcao' : 'Interacoes' , 'eventoRotulo' : 'Fale-Com-Original' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('#android-icon').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_Home' , 'eventoAcao' : 'download-app' , 'eventoRotulo' : 'Android' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('#apple-icon').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_Home' , 'eventoAcao' : 'download-app' , 'eventoRotulo' : 'Apple' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('.arrow-area').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_Home' , 'eventoAcao' : 'Interacoes' , 'eventoRotulo' : 'Saiba Mais' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('.link-conta-s8').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_AbraSuaConta' , 'eventoAcao' : 'Interacoes' , 'eventoRotulo' : 'Conheca-o-original' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('#android').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_AbraSuaConta' , 'eventoAcao' : 'download-app' , 'eventoRotulo' : 'Android' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+  $('#apple').on("click", function (e) {
+    window.parent.postMessage({'event' : 'gaevent' , 'eventoCategoria' : 'LP-ContatoCNPJ_AbraSuaConta' , 'eventoAcao' : 'download-app' , 'eventoRotulo' : 'Apple' , 'Produto' : 'LP-ContatoCNPJ' , 'URL' : dataUrl.getReferrerUrl()});
+  });
+
+});
+
+/* /////////////////////////////////// */
+/* Scripts Form */
+$('input').focus(function () {
+  $(this).parents('.form-group').addClass('focused');
+});
+
+$('.form-input').ready(function () {
+  var inputValue = $('.form-input').val();
+  if ((inputValue == "") || (inputValue == null)) {
+    $('.form-group').removeClass('filled');
+    $('.form-group').removeClass('focused');
+  } else {
+    $('.form-group').addClass('focused');
+  }
+});
+
+function validarCNPJ(cnpj) {
+ 
+  cnpj = cnpj.replace(/[^\d]+/g,'');
+
+  if(cnpj == '') return false;
+   
+  if (cnpj.length != 14)
+      return false;
+
+  // Elimina CNPJs invalidos conhecidos
+  if (cnpj == "00000000000000" || 
+      cnpj == "11111111111111" || 
+      cnpj == "22222222222222" || 
+      cnpj == "33333333333333" || 
+      cnpj == "44444444444444" || 
+      cnpj == "55555555555555" || 
+      cnpj == "66666666666666" || 
+      cnpj == "77777777777777" || 
+      cnpj == "88888888888888" || 
+      cnpj == "99999999999999")
+      return false;
+       
+  // Valida DVs
+  tamanho = cnpj.length - 2
+  numeros = cnpj.substring(0,tamanho);
+  digitos = cnpj.substring(tamanho);
+  soma = 0;
+  pos = tamanho - 7;
+  for (i = tamanho; i >= 1; i--) {
+    soma += numeros.charAt(tamanho - i) * pos--;
+    if (pos < 2)
+          pos = 9;
+  }
+  resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+  if (resultado != digitos.charAt(0))
+      return false;
+       
+  tamanho = tamanho + 1;
+  numeros = cnpj.substring(0,tamanho);
+  soma = 0;
+  pos = tamanho - 7;
+  for (i = tamanho; i >= 1; i--) {
+    soma += numeros.charAt(tamanho - i) * pos--;
+    if (pos < 2)
+          pos = 9;
+  }
+  resultado = soma % 11 < 2 ? 0 : 11 - soma % 11;
+  if (resultado != digitos.charAt(1))
+        return false;
+         
+  return true;
+  
+}
+
+function showError() {
+  $('#warningError').css('display', 'block')
+  $('#btnEnviar').prop('disabled', true);
+  $('#btnEnviar').css('opacity', '0.7');
+}
+
+var checkEmail = false
+var checkTelefone = false
+var checkCnpj = false
+var checkNome = false
+
+function hideError() {
+  if (checkNome === true && checkEmail === true && checkTelefone === true && checkCnpj === true ) {
+    $('#warningError').css('display', 'none')
+    $('#btnEnviar').prop('disabled', false);
+    $('#btnEnviar').css('opacity', 'unset');
+    $('#btnEnviar').css('cursor', 'pointer');
+  }
+}
+
+$('#nome').focusout(function () {
+  if ($(this).val().length <= 1) {
+    $(this).css('color', '#ff2845');
+    showError()
+    checkNome= false
+  }
+});
+
+$('#nome').keyup(function () {
+  $(this).css('color', '#1a1b1c');
+  hideError()
+  checkNome = true
+});
+
+$('#telefone').focusout(function () {
+  if ($(this).val().length <= 14) {
+    $(this).css('color', '#ff2845');
+    showError()
+    checkTelefone = false
+  }
+});
+
+$('#telefone').keyup(function () {
+  $(this).css('color', '#1a1b1c');
+  hideError()
+  checkTelefone = true
+});
+
+$('#email').focusout(function () {
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (!filter.test($(this).val())) {
+    $(this).css('color', '#ff2845');
+    showError()
+    checkEmail = false
+  }
+});
+
+$('#email').keyup(function () {
+  $(this).css('color', '#1a1b1c');
+  hideError()
+  checkEmail = true
+});
+
+$('#cnpj').focusout(function () {
+  if ($(this).val().length <= 13) {
+    $(this).css('color', '#ff2845');
+    showError()
+    checkCnpj = false
+  }
+  if (!validarCNPJ($(this).val())) {
+    $(this).css('color', '#ff2845');
+    showError()
+    checkCnpj = false
+  }
+});
+
+$('#cnpj').keyup(function () {
+  $(this).css('color', '#1a1b1c');
+  hideError()
+  checkCnpj = true
+});
+
+var element = document.getElementById('telefone');
+var maskOptions = {
+  mask: '(00) 00000-0000'
+};
+var mask = IMask(element, maskOptions);
+
+var element = document.getElementById('cnpj');
+var maskOptions = {
+  mask: '00.000.000/0000-00'
+};
+var mask = IMask(element, maskOptions);
+
+function sendForm3() {
+  var data = {
+    "cliente": {
+      "nome": $('#nome').val().normalize('NFD').replace(/([\u0300-\u036f]|[^0-9a-zA-Z\s])/g, ''),
+      "telefone": $('#telefone').val().replace(/[^\d]+/g, ''),
+      "email": $('#email').val(),
+      // "documento": modalPixForm.form.cpf.element.children[0].value.replace(/[^\d]+/g, ''),
+      // "indicadorCliente": modalPixForm.form.isClient.element.children[0].checked,
+      // "documento": $('#cpf').val().replace(/[^\d]+/g, ''),
+      // "cpf": $('#cpf').val().replace(/[^\d]+/g, ''),
+      "cnpj": $('#cnpj').val().replace(/[^\d]+/g, ''),
+      "numeroCnpj": $('#cnpj').val().replace(/[^\d]+/g, ''),
+      
+    },
+    "aplicacao": {
+      "origem": getParameterByName('campanha')?getParameterByName('campanha'): "lp-contato",
+      "nomeCampanha": getParameterByName('campanha')?getParameterByName('campanha'): "lp-contato",
+      "codigoParceria": getParameterByName('campanha')?getParameterByName('campanha'): "lp-contato",
+      "descCampanha": getParameterByName('campanha')?getParameterByName('campanha'): "lp-contato",
+      "utmMedium": getParameterByName('utm_medium'),
+      "utmSource": getParameterByName('utm_source'),
+      "utmCampaign": getParameterByName('utm_campaign'),
+      "utmContent":getParameterByName('utm_content'),
+      "utmTerm": getParameterByName('utm_term')
+    }
+  };
+
+  $.ajax({
+    type: "POST",
+    url: "/pix/leads",
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json',
+      'key': 'v6qxwjMYgbZyWn12t6V2rAZmzy3eOaqeFG96'
+    },
+    success: function (msg) {
+      $('#pu-modalSucessoCNPJ').show()
+      // $('#pu-modalErroCNPJ').show() //para teste localhost
+    },
+    error: function (XMLHttpRequest, textStatus, errorThrown) {
+      $('#pu-modalErroCNPJ').show()
+      // $('#pu-modalSucessoCNPJ').show() //para teste localhost
+    }
+  });
+}
+
+/* /////////////////////////////////// */
+/* Script Modal Form */
+// Get the modal
+var modalSucessoCNPJ = document.getElementById("pu-modalSucessoCNPJ");
+// Get the button that opens the modal
+// Get the <span> element that closes the modal
+var spanSucessoCNPJ = document.getElementsByClassName("closeSucessoCNPJ")[0];
+// When the user clicks the button, open the modal
+// When the user clicks on <span> (x), close the modal
+if (spanSucessoCNPJ) {
+  spanSucessoCNPJ.onclick = function () {
+    modalSucessoCNPJ.style.display = "none";
+  }
+}
+// When the user clicks anywhere outside of the modal, close it
+/*window.onclick = function (event) {
+  if (event.target == modal) {
+    modalSucessoCNPJ.style.display = "none";
+  }
+}*/
+
+/* /////////////////////////////////// */
+/* Script Modal Form */
+// Get the modal
+var modalErroCNPJ = document.getElementById("pu-modalErroCNPJ");
+// Get the button that opens the modal
+// Get the <span> element that closes the modal
+var spanErroCNPJ = document.getElementsByClassName("closeErroCNPJ")[0];
+// When the user clicks the button, open the modal
+// When the user clicks on <span> (x), close the modal
+if (spanErroCNPJ) {
+  spanErroCNPJ.onclick = function () {
+    modalErroCNPJ.style.display = "none";
+  }
+}
+// When the user clicks anywhere outside of the modal, close it
+/*window.onclick = function (event) {
+  if (event.target == modal) {
+    modalErroCNPJ.style.display = "none";
+  }
+}*/

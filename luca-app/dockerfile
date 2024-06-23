@@ -1,0 +1,7 @@
+FROM node:14
+COPY . /app-node
+WORKDIR /app-node
+RUN apt-get update && apt-get install -y nano
+RUN npm install
+EXPOSE 3000
+ENTRYPOINT npm start
