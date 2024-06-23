@@ -25,4 +25,4 @@ services:
     volumes:
       - ../app-python:/app-python
     ports:
-      - '5000:5000'
+      - '5000:80'

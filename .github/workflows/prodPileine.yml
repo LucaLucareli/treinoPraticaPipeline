@@ -24,18 +24,18 @@ jobs:
         node-version: '16'
 
     - name: Install dependencies
-      working-directory: ./app
+      working-directory: ./appTreino
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
     - name: Run test
-      working-directory: ./app
+      working-directory: ./appTreino
       run: |
-        python -m coverage run server.py
+        python -m coverage run app_test
 
     - name: Relatorio
-      working-directory: ./app
+      working-directory: ./appTreino
       run: |
          python -m coverage report
 
