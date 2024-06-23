@@ -50,16 +50,15 @@ jobs:
 
     - name: Install Docker Compose
       run: |
-        sudo apt-get update
-        sudo apt-get install -y docker-compose
-
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+  
     - name: Docker Compose Build & Push
       run: |
-        docker-compose build
-        docker-compose push
-
-
+          docker-compose -f ./docker-compose.yml build
+          docker-compose -f ./docker-compose.yml push
+  
     - name: Docker Compose Up
       run: |
-        docker-compose up -d
+          docker-compose -f ./docker-compose.yml up -d
 
