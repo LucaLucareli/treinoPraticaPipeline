@@ -1,4 +1,5 @@
-flask_sqlalchemy==2.5.1
-flask==1.1.2
+flask_sqlalchemy
+flask
 psycopg2
+Jinja2==3.0.3
 coverage
