@@ -58,7 +58,8 @@ jobs:
         docker-compose build
         docker-compose push
 
+        
     - name: Docker Compose Up
       run: |
         docker-compose up -d
-        
+
