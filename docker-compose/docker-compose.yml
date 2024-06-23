@@ -1,28 +1,33 @@
 version: '3.8'
 services:
   db:
-    build: ./db
+    build: ../db
     image: lucalucareli/db_original:1.0
     volumes:
       - ./db/sql:/docker-entrypoint-initdb.d
     ports:
       - '5454:5432'
   node:
-    build: ./luca-app
+    build: ../luca-app
     image: lucalucareli/nodejs_original:1.0
     volumes:
       - ../luca-app:/app-node
     ports:
       - '8080:3000'
   nginx:
-    build: ./nginx
+    build: ../nginx
     image: lucalucareli/nginx_original:1.0
     ports:
       - '80:80'
   appPython:
-    build: ./app-python
+    build: ../app-python
     image: lucalucareli/python_original:1.0
     volumes:
       - ../app-python:/app-python
     ports:
       - '5000:80'
+  apptreino:
+    build: ../app-python
+    image: lucalucareli/python_treino:1.0
+    volumes:
+      - ../app-python:/app-python
