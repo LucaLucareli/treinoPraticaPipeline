@@ -57,16 +57,16 @@ jobs:
     - name: Docker Compose Build
       working-directory: ./docker-compose
       run: |
-          docker-compose -f docker-compose build
+          docker-compose -f docker-compose.yml build
 
     - name: Docker Compose Push
       working-directory: ./docker-compose
       run: |
-          docker-compose -f docker-compose push
+          docker-compose -f docker-compose.yml push
 
     - name: Docker Compose Up
       working-directory: ./docker-compose
       run: |
-          docker-compose -f docker-compose up -d
+          docker-compose -f docker-compose.yml up -d
 
 
