@@ -23,9 +23,9 @@ services:
       - '80:80'
 
   appPython:
-    build: ../app-python
+    build: ../app
     image: lucalucareli/python_original:1.0
     volumes:
-      - ../app-python:/app-python
+      - ../app:/app
     ports:
       - '5000:80'
