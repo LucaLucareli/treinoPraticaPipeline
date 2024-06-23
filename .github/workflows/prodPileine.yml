@@ -55,11 +55,13 @@ jobs:
           sudo apt-get install -y docker-compose
   
     - name: Docker Compose Build & Push
+      working-directory: ../
       run: |
           docker-compose -f ./docker-compose.yml build
           docker-compose -f ./docker-compose.yml push
   
     - name: Docker Compose Up
+      working-directory: ../
       run: |
           docker-compose -f ./docker-compose.yml up -d
 
