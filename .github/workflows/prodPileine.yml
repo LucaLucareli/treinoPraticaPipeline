@@ -61,3 +61,4 @@ jobs:
     - name: Docker Compose Up
       run: |
         docker-compose up -d
+        
