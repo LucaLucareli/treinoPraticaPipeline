@@ -32,7 +32,7 @@ jobs:
     - name: Run test
       working-directory: ./app
       run: |
-        python -m coverage run -m app
+        python -m coverage run server.py
 
     - name: Relatorio
       working-directory: ./app
