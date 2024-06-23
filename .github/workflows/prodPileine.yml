@@ -49,20 +49,20 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Install Docker Compose
-      working-directory: ../
       run: |
           sudo apt-get update
           sudo apt-get install -y docker-compose
-  
-    - name: Docker Compose Build & Push
-      working-directory: ../
+
+    - name: Docker Compose Build
       run: |
-          docker-compose -f ./docker-compose.yml build
-          docker-compose -f ./docker-compose.yml push
-  
+          docker-compose -f docker-compose build
+
+    - name: Docker Compose Push
+      run: |
+          docker-compose -f docker-compose push
+
     - name: Docker Compose Up
-      working-directory: ../
       run: |
-          docker-compose -f ./docker-compose.yml up -d
+          docker-compose -f docker-compose up -d
 
 
